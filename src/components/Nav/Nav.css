@@ -1,3 +1,37 @@
-nav{
-    position: absolute;
+.nav {
+  position: fixed;
+  width: 80vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  background-color: #C5C6C7;
+  border-radius: 1rem;
+  top: 2vh;
+  box-shadow: 0 0 10px 0 #45A29E;
+}
+.nav-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.logo-wrapper {
+  height: 90%;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+.logo {
+  width: auto;
+  height: 100%;
+  display: block;
+}
+.nav-ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+.nav-li {
+  margin: 0 10px;
+  font-size: 1.2rem;
 }

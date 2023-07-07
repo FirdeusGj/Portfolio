@@ -4,18 +4,18 @@ import './Nav.css'
 
 export default function Nav() {
   return (
-    <div>
+    <div className="nav-wrapper">
       <nav className="nav">
         <div className="logo-wrapper">
-          <img className="logo" src={Logo} width={100} />
+          <img className="logo" src={Logo}/>
         </div>
         <div className="nav-ul-wrapper">
           <ul className="nav-ul">
-            <li className="li">home</li>
-            <li className="li">projects</li>
-            <li className="li">about</li>
-            <li className="li">contact</li>
-            <li className="li">resume</li>
+            <li className="nav-li">Home</li>
+            <li className="nav-li">Projects</li>
+            <li className="nav-li">About</li>
+            <li className="nav-li">Resume</li>
+            <li className="nav-li">Contact</li>
           </ul>
         </div>
       </nav>
