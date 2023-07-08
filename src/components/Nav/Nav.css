@@ -5,10 +5,11 @@
   justify-content: space-around;
   align-items: center;
   height: 10vh;
-  background-color: #C5C6C7;
+  background-color: black;
   border-radius: 1rem;
   top: 2vh;
-  box-shadow: 0 0 10px 0 #45A29E;
+  color:white;
+  box-shadow: 0 0 10px 0 black;
 }
 .nav-wrapper {
   width: 100%;
@@ -25,6 +26,8 @@
   width: auto;
   height: 100%;
   display: block;
+  -webkit-filter:drop-shadow(0 0 3px black) invert(1);
+  filter:drop-shadow(0 0 3px black) invert(1);
 }
 .nav-ul {
   list-style: none;
