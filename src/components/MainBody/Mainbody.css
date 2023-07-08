@@ -15,3 +15,6 @@ main{
     justify-content: space-around;
     width:100%;
 }
+.num{
+    transition: all 1s cubic-bezier(0.42, 0, 0.58, 1);
+}
