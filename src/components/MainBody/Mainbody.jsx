@@ -3,7 +3,7 @@ import "./Mainbody.css";
 export default function Mainbody() {
   const Counter = ({ targetNumber, symbol, startValue }) => {
     const [count, setCount] = useState(startValue || 0);
-    const duration = 2000; // Animation duration in milliseconds
+    const duration = 1000;
   
     useEffect(() => {
       const remainingDistance = targetNumber - count;
