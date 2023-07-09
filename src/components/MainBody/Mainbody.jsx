@@ -33,7 +33,6 @@ export default function Mainbody() {
       </div>
     );
   };
-  
   const today = new Date();
   const startDate = new Date(2021, 7, 1);
   const daysDifference = Math.floor(
@@ -53,10 +52,6 @@ export default function Mainbody() {
           <h1>My Current Stats</h1>
           <div>
             <div>
-              <h1><Counter targetNumber={14} startValue={0} symbol={"+"}/></h1>
-              <h6>Github repos</h6>
-            </div>
-            <div>
               <h1 className="num">
                 <Counter targetNumber={daysDifference} startValue={650} symbol={"+"} />
               </h1>
@@ -71,7 +66,11 @@ export default function Mainbody() {
               <h6>Finished Projects</h6>
             </div>
             <div>
-              <h1><Counter targetNumber={208} startValue={150} symbol={"+"}/></h1>
+              <h1><Counter targetNumber={14} startValue={0} symbol={"+"}/></h1>
+              <h6>Github repos</h6>
+            </div>
+            <div>
+              <h1><Counter targetNumber={212} startValue={150} symbol={"+"}/></h1>
               <h6>Github Contributions</h6>
             </div>
           </div>
