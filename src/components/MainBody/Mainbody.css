@@ -7,9 +7,6 @@ main{
     align-items: center;
     justify-content: center;
 }
-.technology{
-    height:100px;
-}
 .mainbody-wrapper{
     display: flex; 
     justify-content: space-around;
