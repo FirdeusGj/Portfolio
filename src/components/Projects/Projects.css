@@ -17,7 +17,8 @@
 .project-info {
   width: 60%;
 }
-.project-description {
+.project-description h3{
+    font-weight: lighter;
 }
 .project-text {
   width: 90%;

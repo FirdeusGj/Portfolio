@@ -1,4 +1,10 @@
 import CarsProject from "../images/carSuggestionsLink.png";
+import EcomProject from '../images/ecommerceLink.png'
+import FitnessProject from '../images/FitnessApp.png'
+import FoodProject from '../images/food app.png'
+import GoogleProject from '../images/googleCloneLink.png'
+import HuluProject from '../images/huluApp.png'
+import WeatherProject from '../images/weatherApp.png'
 
 export const projectsData = [
   {
@@ -10,9 +16,9 @@ export const projectsData = [
     githubLink: "",
   },
   {
-    image: CarsProject,
+    image: EcomProject,
     description: "This is made using",
-    languages: "HTML",
+    languages: ['HTML', 'CSS', 'Javascript', 'React'],
   },
   {
     image: CarsProject,
