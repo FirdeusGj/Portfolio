@@ -1,8 +1,10 @@
-.projects {
-  border: 3px solid red;
+.projects{
+  background-color:azure;
+  border-radius: 1rem;
   width: 64rem;
   margin: 0 auto;
   display: flex;
+  margin: 2rem auto
 }
 .project-img {
   width: 40%;
@@ -11,8 +13,10 @@
   justify-content: center;
 }
 .project-img img {
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.393);
   width: 90%;
   margin: 1rem;
+  border-radius: 1rem;
 }
 .project-info {
   width: 60%;
