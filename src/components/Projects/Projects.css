@@ -1,0 +1,31 @@
+.projects {
+  border: 3px solid red;
+  width: 64rem;
+  margin: 0 auto;
+  display: flex;
+}
+.project-img {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project-img img {
+  width: 90%;
+  margin: 1rem;
+}
+.project-info {
+  width: 60%;
+}
+.project-description {
+}
+.project-text {
+  width: 90%;
+  margin: 1rem;
+}
+.project-languages {
+}
+.project-links {
+}
+.project-link {
+}
