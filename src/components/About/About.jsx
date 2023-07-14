@@ -5,7 +5,7 @@ import PFP from '../images/theLogo.png'
 export default function About() {
   return (
     <div>
-      <div className="about">
+      <div className="about" id="about">
         <img src={PFP} className="pfp" />
         <figure className="about-img-wrapper">
           <img className="about-img" src={AboutImage} alt="" />
