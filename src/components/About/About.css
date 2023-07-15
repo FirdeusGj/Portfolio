@@ -9,7 +9,12 @@
     justify-content: center;
     position: relative;
 }
-.about-title{
+.about-wrapper{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .about-text{
     width: 60%;

@@ -12,27 +12,27 @@ import Redux from "../images/redux.jpg";
 import SASS from "../images/sass.png";
 import Tailwind from "../images/TailwindCSS.png";
 import Typescript from "../images/typescript.png";
-import Windows from '../images/windowsLogo.png'
+import Windows from "../images/windowsLogo.png";
 
 export default function About() {
   const inputRef = useRef(null);
 
   const goToElement = (e) => {
-    if (e.key === 'Enter') {
+    if (e.key === "Enter") {
       const elementId = inputRef.current.value;
       const element = document.getElementById(elementId);
 
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+        element.scrollIntoView({ behavior: "smooth" });
       } else {
-        alert('Element not found!');
+        alert("Element not found!");
       }
     }
   };
 
   return (
-    <div>
-      <div className="about" id="about">
+    <div className="about-wrapper" id="about">
+      <div className="about">
         <img src={PFP} className="pfp" />
         <figure className="about-img-wrapper">
           <img className="about-img" src={AboutImage} alt="" />
@@ -71,14 +71,17 @@ export default function About() {
       </div>
       <div className="technology">
         <div className="windows-wrapper">
-        <figure>
-          <img src={Windows} className="technology-img windows" alt="" />
-        </figure>
-        <div className="input-wrapper">
-          <input type="text" ref={inputRef}
-          placeholder='home/projects'
-          onKeyPress={goToElement}/>
-        </div>
+          <figure>
+            <img src={Windows} className="technology-img windows" alt="" />
+          </figure>
+          <div className="input-wrapper">
+            <input
+              type="text"
+              ref={inputRef}
+              placeholder="home/projects"
+              onKeyPress={goToElement}
+            />
+          </div>
         </div>
         <figure className="technology-img-wrapper">
           <img
