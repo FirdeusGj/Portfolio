@@ -1,8 +1,35 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./About.css";
 import AboutImage from "../images/aboutImage.jpg";
-import PFP from '../images/theLogo.png'
+import PFP from "../images/theLogo.png";
+import CSS from "../images/CSS.png";
+import Firebase from "../images/firebase.png";
+import Git from "../images/git.png";
+import JavaScript from "../images/javascript.png";
+import NextJs from "../images/nextjs.png";
+import ReactLogo from "../images/react.png";
+import Redux from "../images/redux.jpg";
+import SASS from "../images/sass.png";
+import Tailwind from "../images/TailwindCSS.png";
+import Typescript from "../images/typescript.png";
+import Windows from '../images/windowsLogo.png'
+
 export default function About() {
+  const inputRef = useRef(null);
+
+  const goToElement = (e) => {
+    if (e.key === 'Enter') {
+      const elementId = inputRef.current.value;
+      const element = document.getElementById(elementId);
+
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        alert('Element not found!');
+      }
+    }
+  };
+
   return (
     <div>
       <div className="about" id="about">
@@ -41,6 +68,55 @@ export default function About() {
             </h4>
           </div>
         </div>
+      </div>
+      <div className="technology">
+        <div className="windows-wrapper">
+        <figure>
+          <img src={Windows} className="technology-img windows" alt="" />
+        </figure>
+        <div className="input-wrapper">
+          <input type="text" ref={inputRef}
+          placeholder='home/projects'
+          onKeyPress={goToElement}/>
+        </div>
+        </div>
+        <figure>
+          <img
+            className="technology-img"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+            alt=""
+          />
+        </figure>
+        <figure>
+          <img className="technology-img" src={CSS} alt="" />
+        </figure>
+        <figure>
+          <img className="technology-img" src={JavaScript} alt="" />
+        </figure>
+        <figure>
+          <img className="technology-img" src={ReactLogo} alt="" />
+        </figure>
+        <figure>
+          <img className="technology-img" src={Firebase} alt="" />
+        </figure>
+        <figure>
+          <img className="technology-img" src={Typescript} alt="" />
+        </figure>
+        <figure>
+          <img className="technology-img" src={Git} alt="" />
+        </figure>
+        <figure>
+          <img className="technology-img" src={SASS} alt="" />
+        </figure>
+        <figure>
+          <img className="technology-img" src={Tailwind} alt="" />
+        </figure>
+        <figure>
+          <img className="technology-img" src={NextJs} alt="" />
+        </figure>
+        <figure>
+          <img className="technology-img" src={Redux} alt="" />
+        </figure>
       </div>
     </div>
   );

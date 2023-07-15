@@ -7,7 +7,7 @@ export default function Projects() {
     <div>
         {projectsData.map((elem) => (
           <>
-            <div className="projects">
+            <div className="projects" id="projects">
             <figure className="project-img">
               <img src={elem.image} alt="" />
             </figure>
