@@ -4,7 +4,7 @@ import './Nav.css'
 
 export default function Nav() {
   return (
-    <div className="nav-wrapper">
+    <div className="nav-wrapper" id="home">
       <nav className="nav">
         <div className="logo-wrapper">
           <img className="logo" src={Logo}/>

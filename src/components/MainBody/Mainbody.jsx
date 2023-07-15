@@ -41,7 +41,7 @@ export default function Mainbody() {
   console.log(daysDifference);
   return (
     <main>
-      <div className="mainbody-wrapper" id="home">
+      <div className="mainbody-wrapper">
         <div>
           <h3>Hello, I am</h3>
           <h1>Firdeus Gjepali.</h1>

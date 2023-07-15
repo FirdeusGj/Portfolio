@@ -80,41 +80,41 @@ export default function About() {
           onKeyPress={goToElement}/>
         </div>
         </div>
-        <figure>
+        <figure className="technology-img-wrapper">
           <img
             className="technology-img"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
             alt=""
           />
         </figure>
-        <figure>
+        <figure className="technology-img-wrapper">
           <img className="technology-img" src={CSS} alt="" />
         </figure>
-        <figure>
+        <figure className="technology-img-wrapper">
           <img className="technology-img" src={JavaScript} alt="" />
         </figure>
-        <figure>
+        <figure className="technology-img-wrapper">
           <img className="technology-img" src={ReactLogo} alt="" />
         </figure>
-        <figure>
+        <figure className="technology-img-wrapper">
           <img className="technology-img" src={Firebase} alt="" />
         </figure>
-        <figure>
+        <figure className="technology-img-wrapper">
           <img className="technology-img" src={Typescript} alt="" />
         </figure>
-        <figure>
+        <figure className="technology-img-wrapper">
           <img className="technology-img" src={Git} alt="" />
         </figure>
-        <figure>
+        <figure className="technology-img-wrapper">
           <img className="technology-img" src={SASS} alt="" />
         </figure>
-        <figure>
+        <figure className="technology-img-wrapper">
           <img className="technology-img" src={Tailwind} alt="" />
         </figure>
-        <figure>
+        <figure className="technology-img-wrapper">
           <img className="technology-img" src={NextJs} alt="" />
         </figure>
-        <figure>
+        <figure className="technology-img-wrapper">
           <img className="technology-img" src={Redux} alt="" />
         </figure>
       </div>
