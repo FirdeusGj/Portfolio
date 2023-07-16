@@ -4,10 +4,10 @@ import { projectsData } from "../Data/ProjectsData";
 
 export default function Projects() {
   return (
-    <div>
+    <div id="projects">
         {projectsData.map((elem) => (
           <>
-            <div className="projects" id="projects">
+            <div className="project">
             <figure className="project-img">
               <img src={elem.image} alt="" />
             </figure>

@@ -85,6 +85,9 @@
   .windows-wrapper button:hover{
     cursor: pointer;
   }
+  .about-para h4{
+    font-weight: lighter;
+  }
   .input-wrapper{
     height: 3rem;
     background-color: white;

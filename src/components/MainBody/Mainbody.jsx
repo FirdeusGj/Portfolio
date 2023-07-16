@@ -48,6 +48,9 @@ export default function Mainbody() {
           <h2>Frontend Developer</h2>
           <h4>Here's more about me.</h4>
         </div>
+        <a className="scroll" href="#about">
+          <div className="scroll-icon"></div>
+        </a>
         <div>
           <h1>My Current Stats</h1>
           <div>

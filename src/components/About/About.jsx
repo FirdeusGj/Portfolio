@@ -16,21 +16,23 @@ import Windows from "../images/windowsLogo.png";
 
 export default function About() {
   const inputRef = useRef(null);
-
+  const input = document.querySelector('input')
   const goToElement = () => {
     const elementId = inputRef.current.value;
     const element = document.getElementById(elementId);
 
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
+      input.value = ''
     } else {
-      alert('Element not found!');
+      alert('Use only home, projects or contact');
     }
   };
 
   const handleKeyPress = (e) => {
     if (e.key === 'Enter') {
       goToElement();
+      input.value = ''
     }
   };
 
@@ -84,7 +86,7 @@ export default function About() {
             <input
               type="text"
               ref={inputRef}
-              placeholder="home/projects"
+              placeholder="home/projects/contact"
               onKeyPress={handleKeyPress}
             />
           </div>

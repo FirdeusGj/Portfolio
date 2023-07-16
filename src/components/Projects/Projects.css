@@ -1,4 +1,7 @@
-.projects{
+#projects{
+  padding: 8rem 0;
+}
+.project{
   background-color:azure;
   border-radius: 1rem;
   width: 64rem;

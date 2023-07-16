@@ -1,23 +1,21 @@
-import React from 'react'
+import React from "react";
+import "./Footer.css";
+import FooterLogo from "../images/theLogo.png";
 
 export default function Footer() {
   return (
-    <div>
-      <footer>
-        <div className='footer-image-section'>
-          <figure className='footer-image'>
-            <img src="" alt="" />
-          </figure>
+    <footer>
+      <div className="footer-wrapper">
+        <figure className="footer-image">
+          <img src={FooterLogo} alt="" />
+        </figure>
+        <div className="footer-links">
+          <h4><a href="">Linkedin</a></h4>
+          <h4><a href="">Github</a></h4>
+          <h4><a href="">Resume</a></h4>
+          <h4><a href="">Contact</a></h4>
         </div>
-        <div className="footer-socials">
-          <ul>
-            <li><a href="">Linkedin</a></li>
-            <li><a href="">Github</a></li>
-            <li><a href="">Resume</a></li>
-            <li><a href="">Contact</a></li>
-          </ul>
-        </div>
-      </footer>
-    </div>
-  )
+      </div>
+    </footer>
+  );
 }
