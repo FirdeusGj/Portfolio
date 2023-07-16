@@ -2,34 +2,84 @@
     display: flex;
     width: 64rem;
     margin:0 auto;
+    border-radius: 1rem;
 }
 .contact-text{
-    gap: 1rem;
+    width: 90%;
 }
 .contact-text-title{
-
+    margin-bottom:0.5rem;
+    font-size: 1.2rem;
 }
 .contact-text-main{
-
+    margin: 1rem 0;
 }
 .contact-text-ending{
-
+    margin: 1rem 0;
+}
+.contact-text-ending h3,
+.contact-text-title h4{
+    font-weight: lighter;
 }
 .contact-text-wrapper{
     width: 50%;
 }
-.email{
-
+.email a{
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    text-decoration: none;
+    color: black;
 }
 .contact-input-wrapper{
    width: 50%;
 }
-.input-name-wrapper{
-    
+.input-name-wrapper,
+.input-email-wrapper,
+.input-message-wrapper textarea{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 1rem 0;
+    font-family: sans-serif;
 }
-.input-email-wrapper{
-
+.input-message-wrapper textarea,
+.input-email-wrapper input,
+.input-name-wrapper input{
+    font-size: 1.1rem;
+    padding-left: 0.3rem;
 }
-.input-message-wrapper{
-
+.input-name-wrapper input,
+.input-email-wrapper input{
+    height: 2rem;
+}
+textarea{
+    resize: none;
+    width: 99%;
+}
+.input-email-wrapper input,
+.input-message-wrapper textarea,
+.input-name-wrapper input{
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+}
+.input-email-wrapper input:focus,
+.input-message-wrapper textarea:focus,
+.input-name-wrapper input:focus{
+    outline: none;
+}
+.input-message-wrapper textarea{
+    height: 6rem;
+}
+.form-button button{
+    height: 3rem;
+    width: 100%;
+    background-color: black;
+    color:white;
+    font-size: 1.2rem;
+    text-shadow: 0 0 4px  white;
+    font-weight: bolder;
+    border:none;
+    box-shadow: 0 0 3px 0 black;
+    border-radius: 5px;
 }
