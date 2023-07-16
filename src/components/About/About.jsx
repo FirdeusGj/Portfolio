@@ -17,16 +17,20 @@ import Windows from "../images/windowsLogo.png";
 export default function About() {
   const inputRef = useRef(null);
 
-  const goToElement = (e) => {
-    if (e.key === "Enter") {
-      const elementId = inputRef.current.value;
-      const element = document.getElementById(elementId);
+  const goToElement = () => {
+    const elementId = inputRef.current.value;
+    const element = document.getElementById(elementId);
 
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      } else {
-        alert("Element not found!");
-      }
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      alert('Element not found!');
+    }
+  };
+
+  const handleKeyPress = (e) => {
+    if (e.key === 'Enter') {
+      goToElement();
     }
   };
 
@@ -72,14 +76,16 @@ export default function About() {
       <div className="technology">
         <div className="windows-wrapper">
           <figure>
+          <button onClick={goToElement}>
             <img src={Windows} className="technology-img windows" alt="" />
+          </button>
           </figure>
           <div className="input-wrapper">
             <input
               type="text"
               ref={inputRef}
               placeholder="home/projects"
-              onKeyPress={goToElement}
+              onKeyPress={handleKeyPress}
             />
           </div>
         </div>

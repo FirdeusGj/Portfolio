@@ -1,0 +1,35 @@
+.contact{
+    display: flex;
+    width: 64rem;
+    margin:0 auto;
+}
+.contact-text{
+    gap: 1rem;
+}
+.contact-text-title{
+
+}
+.contact-text-main{
+
+}
+.contact-text-ending{
+
+}
+.contact-text-wrapper{
+    width: 50%;
+}
+.email{
+
+}
+.contact-input-wrapper{
+   width: 50%;
+}
+.input-name-wrapper{
+    
+}
+.input-email-wrapper{
+
+}
+.input-message-wrapper{
+
+}
