@@ -1,7 +1,39 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+import emailjs from 'emailjs-com';
 import "./Contact.css";
-
 export default function Contact() {
+  const form = useRef();
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [isSent, setIsSent] = useState(false);
+
+  const handleNameChange = (event) => {
+    setName(event.target.value);
+  };
+
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+  };
+
+  const handleMessageChange = (event) => {
+    setMessage(event.target.value);
+  };
+
+  const isFormValid = name.trim() !== '' && email.trim() !== '' && message.trim() !== '';
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setIsSent(true)
+    emailjs.sendForm(
+      'service_qtdfrdc',
+      'template_cjfz4q9',
+      form.current,
+      'X4Mi8L9q9HTYDrE3U').catch(() => {
+        alert(
+            'The email service is temporarily unavailable. Please contact me directly on firdegjepali@gmail.com'
+        )
+    })
+  }
   return (
     <section id="contact">
       <div className="contact-text-wrapper">
@@ -35,21 +67,27 @@ export default function Contact() {
         </div>
       </div>
       <div className="contact-input-wrapper">
-        <form action="" className="contact-form">
+        <form ref={form} onSubmit={handleSubmit} action="" className="contact-form">
           <div className="input-name-wrapper">
-            <label htmlFor="">Name</label>
-            <input type="text" />
+            <label htmlFor="name">Name</label>
+            <input type="text" value={name} onChange={handleNameChange} />
           </div>
           <div className="input-email-wrapper">
             <label htmlFor="">Email</label>
-            <input type="email" />
+            <input type="email" value={email} onChange={handleEmailChange} />
           </div>
           <div className="input-message-wrapper">
             <label htmlFor="">Message</label>
-            <textarea name="" id=""></textarea>
+            <textarea name="" value={message} onChange={handleMessageChange} id=""></textarea>
           </div>
           <div className="form-button">
-            <button>Send it my way</button>
+            <button
+            type="submit"
+              id={`${isSent ? 'Sent' : 'unSent'}`}
+              disabled={!isFormValid}
+            >
+              {isSent ? 'Sent! Thanks for the message' : 'Send it my way'}
+            </button>
           </div>
         </form>
       </div>

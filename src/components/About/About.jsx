@@ -32,7 +32,6 @@ export default function About() {
   const handleKeyPress = (e) => {
     if (e.key === 'Enter') {
       goToElement();
-      input.value = ''
     }
   };
 
