@@ -28,7 +28,6 @@ export default function About() {
       alert('Use only home, projects or contact');
     }
   };
-
   const handleKeyPress = (e) => {
     if (e.key === 'Enter') {
       goToElement();
