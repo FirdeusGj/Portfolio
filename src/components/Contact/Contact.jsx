@@ -70,15 +70,15 @@ export default function Contact() {
         <form ref={form} onSubmit={handleSubmit} action="" className="contact-form">
           <div className="input-name-wrapper">
             <label htmlFor="name">Name</label>
-            <input type="text" value={name} onChange={handleNameChange} />
+            <input type="text" required name="user_name" value={name} onChange={handleNameChange} />
           </div>
           <div className="input-email-wrapper">
             <label htmlFor="">Email</label>
-            <input type="email" value={email} onChange={handleEmailChange} />
+            <input type="email" required name="user_email" value={email} onChange={handleEmailChange} />
           </div>
           <div className="input-message-wrapper">
             <label htmlFor="">Message</label>
-            <textarea name="" value={message} onChange={handleMessageChange} id=""></textarea>
+            <textarea name="message" required value={message} onChange={handleMessageChange} id=""></textarea>
           </div>
           <div className="form-button">
             <button
