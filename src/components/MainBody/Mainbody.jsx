@@ -56,37 +56,39 @@ export default function Mainbody() {
           <div className="scroll-icon"></div>
         </a>
         <div className="stats-wrapper">
-          <img className="graph" src={Graph} alt="" />
           <h1>My Current Stats</h1>
           <div>
             <div className="stats">
-              <div>
-                <h1 className="num">
-                  <Counter
-                    targetNumber={daysDifference}
-                    startValue={650}
-                    symbol={"+"}
-                  />
-                </h1>
-                <h6>Days Coding</h6>
-              </div>
-              <div>
-                <h1>
-                  <Counter targetNumber={7} startValue={0} symbol={"+"} />
-                </h1>
-                <h6>Finished Projects</h6>
-              </div>
-              <div>
-                <h1>
-                  <Counter targetNumber={14} startValue={0} symbol={"+"} />
-                </h1>
-                <h6>Github repos</h6>
-              </div>
-              <div>
-                <h1>
-                  <Counter targetNumber={212} startValue={150} symbol={"+"} />
-                </h1>
-                <h6>Github Contributions</h6>
+              <img className="graph" src={Graph} alt="" />
+              <div className="stats-items">
+                <div className="stats-days">
+                  <h1>
+                    <Counter
+                      targetNumber={daysDifference}
+                      startValue={650}
+                      symbol={"+"}
+                    />
+                  </h1>
+                  <h5>Days Coding</h5>
+                </div>
+                <div className="stats-projects">
+                  <h1>
+                    <Counter targetNumber={7} startValue={0} symbol={"+"} />
+                  </h1>
+                  <h5>Finished Projects</h5>
+                </div>
+                <div className="stats-repositories">
+                  <h1>
+                    <Counter targetNumber={14} startValue={0} symbol={"+"} />
+                  </h1>
+                  <h5>Github repositories</h5>
+                </div>
+                <div className="stats-contributions">
+                  <h1>
+                    <Counter targetNumber={212} startValue={150} symbol={"+"} />
+                  </h1>
+                  <h5>Github Contributions</h5>
+                </div>
               </div>
             </div>
           </div>

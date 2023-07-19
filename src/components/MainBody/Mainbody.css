@@ -15,17 +15,12 @@ main {
 }
 .mainbody-wrapper {
   width: 64rem;
-  border: 1px solid red;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .introduction {
   width: 50%;
-  border: 1px solid blue;
-}
-.num {
-  transition: all 1s cubic-bezier(0.42, 0, 0.58, 1);
 }
 .scroll {
   position: absolute;
@@ -35,28 +30,40 @@ main {
 }
 .stats-wrapper {
   position: relative;
-  border: 1px solid red;
   width: 50%;
   height: 25rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 .stats-wrapper>h1{
     position: absolute;
     top:0;
 }
+.stats-projects,
+.stats-contributions,
+.stats-days,
+.stats-repositories{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem;
+    border-bottom: 2px solid black;
+    text-align: center;
+    padding-bottom: 2px;
+}
 .graph {
-  height: 18.5rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  height: 60%;
   opacity: 0.2;
-  transform: translate(-50%, -50%);
+  height: auto;
+  width: 60%;
 }
 .stats {
   z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .scroll-icon {
   width: 20px;
