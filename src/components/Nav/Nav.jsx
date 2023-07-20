@@ -14,7 +14,6 @@ export default function Nav() {
             <li className="nav-li">Home</li>
             <li className="nav-li">Projects</li>
             <li className="nav-li">About</li>
-            <li className="nav-li">Resume</li>
             <li className="nav-li">Contact</li>
           </ul>
         </div>

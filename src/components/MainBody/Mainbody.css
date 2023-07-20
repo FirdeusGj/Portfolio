@@ -12,12 +12,27 @@ main {
   justify-content: space-around;
   width: 100%;
   align-items: center;
+  position: relative;
+}
+.background{
+  background:linear-gradient(black , transparent 10%, transparent 80%,black), url('../images/mainBackground.jpg');
+  background-size: 120%;
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
 }
 .mainbody-wrapper {
+  position: absolute;
+  filter: drop-shadow(0 0 5px white);
+  z-index: 5;
   width: 64rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color:white;
 }
 .introduction {
   width: 50%;
@@ -48,16 +63,14 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 1rem;
-    border-bottom: 2px solid black;
+    margin: 1rem 0;
     text-align: center;
-    padding-bottom: 2px;
 }
 .graph {
   height: 60%;
-  opacity: 0.2;
   height: auto;
   width: 60%;
+  filter: invert(1);
 }
 .stats {
   z-index: 2;

@@ -45,6 +45,7 @@ export default function Mainbody() {
   console.log(daysDifference);
   return (
     <main className="mainbody">
+      <div className="background"></div>
       <div className="mainbody-wrapper">
         <div className="introduction">
           <h3>Hello, I am</h3>
@@ -71,11 +72,11 @@ export default function Mainbody() {
                   </h1>
                   <h5>Days Coding</h5>
                 </div>
-                <div className="stats-projects">
+                <div className="stats-contributions">
                   <h1>
-                    <Counter targetNumber={7} startValue={0} symbol={"+"} />
+                    <Counter targetNumber={212} startValue={150} symbol={"+"} />
                   </h1>
-                  <h5>Finished Projects</h5>
+                  <h5>Github Contributions</h5>
                 </div>
                 <div className="stats-repositories">
                   <h1>
@@ -83,11 +84,11 @@ export default function Mainbody() {
                   </h1>
                   <h5>Github repositories</h5>
                 </div>
-                <div className="stats-contributions">
+                <div className="stats-projects">
                   <h1>
-                    <Counter targetNumber={212} startValue={150} symbol={"+"} />
+                    <Counter targetNumber={7} startValue={0} symbol={"+"} />
                   </h1>
-                  <h5>Github Contributions</h5>
+                  <h5>Finished Projects</h5>
                 </div>
               </div>
             </div>
