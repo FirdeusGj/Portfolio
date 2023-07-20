@@ -30,6 +30,7 @@ main {
   z-index: 5;
   width: 64rem;
   display: flex;
+  height: 100%;
   align-items: center;
   justify-content: space-between;
   color:white;

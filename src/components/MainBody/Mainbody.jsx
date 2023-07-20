@@ -52,6 +52,7 @@ export default function Mainbody() {
           <h1>Firdeus Gjepali.</h1>
           <h2>Frontend Developer</h2>
           <h4>Here's more about me.</h4>
+          <a href="">Github</a><a href="">Resume</a><a href="">Contact</a>
         </div>
         <a className="scroll" href="#about">
           <div className="scroll-icon"></div>
