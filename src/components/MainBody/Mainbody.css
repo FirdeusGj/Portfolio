@@ -13,6 +13,8 @@ main {
   width: 100%;
   align-items: center;
   position: relative;
+  height: 100vh;
+  overflow: hidden;
 }
 .background{
   background:linear-gradient(black , transparent 10%, transparent 80%,black), url('../assets/mainBackground.jpg');
@@ -20,13 +22,14 @@ main {
   background-position: right;
   background-repeat: no-repeat;
   height: 100vh;
-  width: 100%;
-  filter: blur(2px);
-  -webkit-filter: blur(2px);
+  width: 100vw;
+  transform: scale(1.05);
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
 }
 .mainbody-wrapper {
   position: absolute;
-  filter: drop-shadow(0 0 3px white);
+  filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.718));
   z-index: 5;
   width: 64rem;
   display: flex;
@@ -41,6 +44,7 @@ main {
 .introduction h1{
  font-size: 4rem;
  color: #b9deff;
+ filter: drop-shadow(0 0 3px rgba(38, 154, 255, 0.677));
 }
 .introduction h2{
   font-size: 3.1rem;
@@ -124,7 +128,7 @@ main {
 .scroll-icon {
   width: 20px;
   height: 30px;
-  border: 2px solid #242424;
+  border: 2px solid white;
   border-radius: 24px;
   display: flex;
   justify-content: center;
@@ -132,7 +136,7 @@ main {
 }
 .scroll-icon:after {
   content: "";
-  background-color: #242424;
+  background-color: white;
   width: 4px;
   height: 6px;
   border-radius: 2px;

@@ -16,16 +16,18 @@ import Windows from "../assets/windowsLogo.png";
 
 export default function About() {
   const inputRef = useRef(null);
-  const input = document.querySelector('input')
   const goToElement = () => {
     const elementId = inputRef.current.value;
     const element = document.getElementById(elementId);
 
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
-      input.value = ''
-    } else {
-      alert('Use only home, projects or contact');
+    }
+    else if(elementId === 'resume'){
+      window.open('https://drive.google.com/file/d/16fOFFY5AZf6ir5IM_XMw2xGMUkruPFVM/view')
+    }
+     else {
+      alert('Use only home, projects, contact or resume');
     }
   };
   const handleKeyPress = (e) => {
@@ -84,7 +86,7 @@ export default function About() {
             <input
               type="text"
               ref={inputRef}
-              placeholder="home/projects/contact"
+              placeholder="home/projects/contact/resume"
               onKeyPress={handleKeyPress}
             />
           </div>
