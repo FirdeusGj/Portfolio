@@ -1,18 +1,18 @@
 import React, { useRef } from "react";
 import "./About.css";
-import AboutImage from "../images/aboutImage.jpg";
-import PFP from "../images/theLogo.png";
-import CSS from "../images/CSS.png";
-import Firebase from "../images/firebase.png";
-import Git from "../images/git.png";
-import JavaScript from "../images/javascript.png";
-import NextJs from "../images/nextjs.png";
-import ReactLogo from "../images/react.png";
-import Redux from "../images/redux.jpg";
-import SASS from "../images/sass.png";
-import Tailwind from "../images/TailwindCSS.png";
-import Typescript from "../images/typescript.png";
-import Windows from "../images/windowsLogo.png";
+import AboutImage from "../assets/aboutImage.jpg";
+import PFP from "../assets/theLogo.png";
+import CSS from "../assets/CSS.png";
+import Firebase from "../assets/firebase.png";
+import Git from "../assets/git.png";
+import JavaScript from "../assets/javascript.png";
+import NextJs from "../assets/nextjs.png";
+import ReactLogo from "../assets/react.png";
+import Redux from "../assets/redux.jpg";
+import SASS from "../assets/sass.png";
+import Tailwind from "../assets/TailwindCSS.png";
+import Typescript from "../assets/typescript.png";
+import Windows from "../assets/windowsLogo.png";
 
 export default function About() {
   const inputRef = useRef(null);

@@ -1,11 +1,11 @@
-import CarsProject from "../images/carSuggestionsLink.png";
-import EcomProject from '../images/ecommerceLink.png'
-import FitnessProject from '../images/FitnessApp.png'
-import FoodProject from '../images/food app.png'
-import GoogleProject from '../images/googleCloneLink.png'
-import HuluProject from '../images/huluApp.png'
-import WeatherProject from '../images/weatherApp.png'
-import MovieProject from '../images/movieFinder.png'
+import CarsProject from "../assets/carSuggestionsLink.png";
+import EcomProject from '../assets/ecommerceLink.png'
+import FitnessProject from '../assets/FitnessApp.png'
+import FoodProject from '../assets/food app.png'
+import GoogleProject from '../assets/googleCloneLink.png'
+import HuluProject from '../assets/huluApp.png'
+import WeatherProject from '../assets/weatherApp.png'
+import MovieProject from '../assets/movieFinder.png'
 
 export const projectsData = [
   {
