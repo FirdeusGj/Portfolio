@@ -17,7 +17,7 @@ main {
   overflow: hidden;
 }
 .background{
-  background:linear-gradient(black , transparent 10%, transparent 80%,black), url('../assets/mainBackground.jpg');
+  background:linear-gradient(black , transparent 40%, transparent 80%,black), url('../assets/mainBackground.jpg');
   background-size: 120%;
   background-position: right;
   background-repeat: no-repeat;

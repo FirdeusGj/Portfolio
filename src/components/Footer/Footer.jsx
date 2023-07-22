@@ -10,7 +10,7 @@ export default function Footer() {
           <img src={FooterLogo} alt="" />
         </figure>
         <div className="footer-links">
-          <h4><a href="">Linkedin</a></h4>
+          <h4><a href="">LinkedIn</a></h4>
           <h4><a href="">Github</a></h4>
           <h4><a href="">Resume</a></h4>
           <h4><a href="">Contact</a></h4>

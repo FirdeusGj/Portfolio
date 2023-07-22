@@ -16,6 +16,7 @@
 .about-content {
   box-shadow: 0 0 10px 0 black;
   border-radius: 1rem;
+  z-index: 3;
 }
 .about-wrapper {
   display: flex;
@@ -23,7 +24,7 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #242424;
+  background:radial-gradient(#242424 10%,black);
 }
 .about-text {
   width: 60%;
@@ -109,6 +110,25 @@
   background-size: 140%;
   background-position: center;
   background-image: url('../assets/aboutImage.jpg');
+}
+.about-border{
+  height: 32.3rem;
+  width: 64rem;
+  border-radius: 10px;
+  position: absolute;
+  transform: translate(1%, 4%);
+  border:1px solid rgb(2, 2, 85);
+  filter: drop-shadow(0 0 15px rgba(0, 0, 255, 0.568));
+  background:linear-gradient(to top ,rgb(2, 2, 85), rgb(5, 5, 154));
+}
+.about-border1{
+  height: 32.3rem;
+  border-radius: 10px;
+  width: 64rem;
+  position: absolute;
+  transform: translate(-1%, -4%);
+  border:3px solid rgb(0, 0, 142);
+  filter: drop-shadow(0 0 15px rgba(0, 0, 255, 0.568));
 }
 .pfp {
   transition: all 500ms ease-in-out;

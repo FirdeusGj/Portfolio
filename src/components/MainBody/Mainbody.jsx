@@ -56,7 +56,7 @@ export default function Mainbody() {
           <h4>
             Here's more{" "}
             <span className="mainbody-span">
-              <a href="">about me.</a>
+              <a href="#about">about me.</a>
             </span>
           </h4>
           <div className="introduction-links">

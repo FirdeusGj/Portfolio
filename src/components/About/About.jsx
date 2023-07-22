@@ -38,6 +38,8 @@ export default function About() {
 
   return (
     <div className="about-wrapper" id="about">
+      <div className="about-border"></div>
+      <div className="about-border1"></div>
       <div className="about-content">
         <div className="about">
           <div className="about-images">
@@ -46,16 +48,18 @@ export default function About() {
               <div className="infos-items">
                 <h2>Find out more</h2>
                 <h2>
-                  <a href="">LinkedIn</a>
+                  <a href="https://drive.google.com/file/d/16fOFFY5AZf6ir5IM_XMw2xGMUkruPFVM/view" target="_blank">
+                    View Resume
+                  </a>
                 </h2>
                 <h2>
-                  <a href="">Resume</a>
+                  <a href="#contact">Contact me</a>
                 </h2>
                 <h2>
-                  <a href="">Email</a>
+                  <a href="https://www.linkedin.com/in/firdeus-gjepali-832869245/" target="_blank">LinkedIn</a>
                 </h2>
                 <h2>
-                  <a href="">Github</a>
+                  <a href="https://github.com/FirdeusGj" target="_blank">Github</a>
                 </h2>
               </div>
             </div>
@@ -67,7 +71,7 @@ export default function About() {
             </div>
             <div className="about-para">
               <h4>
-                My name is Firdeus Gjepali, an 18-year-old frontend developer
+                My name is Firdeus Gjepali, a frontend developer
                 with a deep passion for building responsive web applications to
                 satisfy tons of users around the world.
               </h4>
