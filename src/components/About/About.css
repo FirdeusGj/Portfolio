@@ -92,9 +92,18 @@
   justify-content: center;
   flex-direction: column;
 }
+.infos-items>h2{
+  margin: 0.3rem 0;
+}
 .infos-items>h2>a{
   text-decoration: none;
-  color:whitesmoke
+  color:whitesmoke;
+  transition: all 300ms ease-in-out;
+}
+.infos-items>h2>a:hover{
+  border-radius: 3px;
+  background-color: rgba(245, 245, 245, 0.351);
+  padding: 5px;
 }
 .infos-items>h2:nth-child(1){
   margin-bottom: 1rem;
