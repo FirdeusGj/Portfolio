@@ -1,8 +1,9 @@
 #projects{
   padding: 8rem 0;
+  background:linear-gradient(#101010, #1f1f1f);
 }
 .project{
-  background-color:azure;
+  background-color: rgba(255, 255, 255, 0.226);
   border-radius: 1rem;
   width: 64rem;
   margin: 0 auto;

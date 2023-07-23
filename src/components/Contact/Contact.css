@@ -1,11 +1,18 @@
 #contact{
     display: flex;
     width: 64rem;
-    margin:8rem auto;
     border-radius: 1rem;
+    padding: 10px;
+}
+.contact-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#1f1f1f, #242424);
 }
 .contact-text{
     width: 90%;
+    color:#E8F9FD;
 }
 .contact-text-title{
     margin-bottom:0.5rem;
@@ -29,10 +36,16 @@
     align-items: center;
     gap: 0.3rem;
     text-decoration: none;
-    color: black;
+    color: #E8F9FD;
+}
+.email>a>svg{
+    fill:#E8F9FD;
 }
 .contact-input-wrapper{
    width: 50%;
+}
+label{
+    color:white;
 }
 .input-name-wrapper,
 .input-email-wrapper,

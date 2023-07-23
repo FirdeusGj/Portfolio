@@ -47,20 +47,40 @@ export default function About() {
             <div className="infos">
               <div className="infos-items">
                 <h2>Find out more</h2>
-                <h2>
-                  <a href="https://drive.google.com/file/d/16fOFFY5AZf6ir5IM_XMw2xGMUkruPFVM/view" target="_blank">
-                    View Resume
-                  </a>
-                </h2>
-                <h2>
-                  <a href="#contact">Contact me</a>
-                </h2>
-                <h2>
-                  <a href="https://www.linkedin.com/in/firdeus-gjepali-832869245/" target="_blank">LinkedIn</a>
-                </h2>
-                <h2>
-                  <a href="https://github.com/FirdeusGj" target="_blank">Github</a>
-                </h2>
+                <ul>
+                  <li>
+                    <h3>
+                      <a
+                        href="https://drive.google.com/file/d/16fOFFY5AZf6ir5IM_XMw2xGMUkruPFVM/view"
+                        target="_blank"
+                      >
+                        View Resume
+                      </a>
+                    </h3>
+                  </li>
+                  <li>
+                    <h3>
+                      <a href="#contact">Contact me</a>
+                    </h3>
+                  </li>
+                  <li>
+                    <h3>
+                      <a
+                        href="https://www.linkedin.com/in/firdeus-gjepali-832869245/"
+                        target="_blank"
+                      >
+                        LinkedIn
+                      </a>
+                    </h3>
+                  </li>
+                  <li>
+                    <h3>
+                      <a href="https://github.com/FirdeusGj" target="_blank">
+                        Github
+                      </a>
+                    </h3>
+                  </li>
+                </ul>
               </div>
             </div>
             <img src={PFP} className="pfp" />
@@ -71,9 +91,9 @@ export default function About() {
             </div>
             <div className="about-para">
               <h4>
-                My name is Firdeus Gjepali, a frontend developer
-                with a deep passion for building responsive web applications to
-                satisfy tons of users around the world.
+                My name is Firdeus Gjepali, a frontend developer with a deep
+                passion for building responsive web applications to satisfy tons
+                of users around the world.
               </h4>
               <br />
               <h4>

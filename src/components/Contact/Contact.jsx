@@ -35,7 +35,8 @@ export default function Contact() {
     })
   }
   return (
-    <section id="contact">
+    <section className="contact-wrapper">
+    <div id="contact">
       <div className="contact-text-wrapper">
         <div className="contact-text">
           <div className="contact-text-title">
@@ -85,12 +86,13 @@ export default function Contact() {
             type="submit"
               id={`${isSent ? 'Sent' : 'unSent'}`}
               disabled={!isFormValid}
-            >
+              >
               {isSent ? 'Sent! Thanks for the message' : 'Send it my way'}
             </button>
           </div>
         </form>
       </div>
-    </section>
+    </div>
+              </section>
   );
 }
