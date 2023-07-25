@@ -15,11 +15,14 @@
     background: linear-gradient(#1f1f1f, #242424);
 }
 .sent-message{
-    background-color: white;
+    background-color: #242424;
     position: absolute;
+    color:white;
+    fill:white;
     height: 130%;
     width: 130%;
     left:50%;
+    z-index: 99;
     top:50%;
     display: none;
     align-items: center;
@@ -27,7 +30,28 @@
     flex-direction: column;
     animation: forwards ease-out 500ms submitMessage;
 }
-.sent-message div{
+.loading-screen{
+    animation: forwards ease-out 500ms submitMessage;
+    position: absolute;
+    fill:white;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 130%;
+    z-index: 98;
+    width: 130%;
+    background-color: #242424;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+.loading-screen svg{
+    height: 5rem;
+    animation: infinite 2000ms linear spinner;
+}
+.sent-message div,
+.loading-screen div{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,6 +65,14 @@
 .sent-message svg{
     height: 5rem;
     animation: forwards 1000ms ease-out checkmarkSpin;
+}
+@keyframes spinner {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
 @keyframes submitMessage {
     0%{
