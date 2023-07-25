@@ -68,4 +68,9 @@
   width: 5rem;
   height: 2.5rem;
   background:linear-gradient(45deg, rgb(201, 228, 252), white);
+  transition: all 100ms ease-in-out;
+}
+.project-link:hover{
+  box-shadow: 0 0 5px 0 white;
+  transform: scale(1.05);
 }

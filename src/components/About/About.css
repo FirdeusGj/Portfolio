@@ -135,9 +135,8 @@
   border-radius: 10px;
   position: absolute;
   transform: translate(1%, 4%);
-  border:1px solid rgb(2, 2, 85);
   filter: drop-shadow(0 0 15px rgba(0, 0, 255, 0.568));
-  background:linear-gradient(to top ,rgb(2, 2, 85), rgb(5, 5, 154));
+  background:linear-gradient(333deg , rgb(124, 124, 248) 30%,rgb(1, 88, 211), transparent 50%);
 }
 .about-border1{
   height: 32.3rem;
@@ -145,7 +144,8 @@
   width: 64rem;
   position: absolute;
   transform: translate(-1%, -4%);
-  border:3px solid rgb(0, 0, 142);
+  border:3px solid;
+  border-image: linear-gradient(154deg , rgb(124, 124, 248),rgb(1, 88, 211), transparent 50%) 1;
   filter: drop-shadow(0 0 15px rgba(0, 0, 255, 0.568));
 }
 .pfp {
