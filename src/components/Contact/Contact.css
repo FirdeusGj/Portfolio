@@ -122,6 +122,9 @@
     text-decoration: none;
     color: #E8F9FD;
 }
+.email{
+    display: flex;
+}
 .email>a>svg{
     fill:#E8F9FD;
 }
