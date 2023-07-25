@@ -1,9 +1,25 @@
 #projects{
   padding: 8rem 0;
   background:linear-gradient(#101010, #1f1f1f);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#projects>h1{
+  color:white;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+#projects>hr{
+  width: 30rem;
+  border: 2px solid;
+  border-image: linear-gradient(18deg, transparent, white, rgb(124, 124, 248), transparent) 1;
 }
 .project{
-  background-color: rgba(255, 255, 255, 0.226);
+  border: 3px solid;
+  border-image: linear-gradient(18deg, transparent, white, rgb(124, 124, 248), transparent) 1;
   border-radius: 1rem;
   width: 64rem;
   margin: 0 auto;
@@ -17,7 +33,7 @@
   justify-content: center;
 }
 .project-img img {
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.393);
+  box-shadow: 0 0 10px 0 aliceblue;
   width: 90%;
   margin: 1rem;
   border-radius: 1rem;
@@ -31,10 +47,24 @@
 .project-text {
   width: 90%;
   margin: 1rem;
+  color:aliceblue;
 }
 .project-languages {
+  margin: 1rem 0;
 }
-.project-links {
+.projects-links{
+  display: flex;
 }
 .project-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 5px;
+  justify-content: center;
+  margin-right: 1rem;
+  color:black;
+  border-radius: 5px;
+  width: 5rem;
+  height: 2.5rem;
+  background:linear-gradient(45deg, rgb(201, 228, 252), white);
 }

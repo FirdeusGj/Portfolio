@@ -19,13 +19,15 @@ export default function About() {
   const goToElement = () => {
     const elementId = inputRef.current.value;
     const element = document.getElementById(elementId);
-
+    const input = document.querySelector("input");
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
+      input.value = "";
     } else if (elementId === "resume") {
       window.open(
         "https://drive.google.com/file/d/16fOFFY5AZf6ir5IM_XMw2xGMUkruPFVM/view"
-      );
+        );
+        input.value = "";
     } else {
       alert("Use only home, projects, contact or resume");
     }

@@ -19,28 +19,40 @@ export default function Contact() {
   const handleMessageChange = (event) => {
     setMessage(event.target.value);
   };
-
+  const submitMsg = document.querySelector('.sent-message')
   const isFormValid =
     name.trim() !== "" && email.trim() !== "" && message.trim() !== "";
   const handleSubmit = (event) => {
     event.preventDefault();
-    setIsSent(true);
     emailjs
-      .sendForm(
-        "service_qtdfrdc",
-        "template_cjfz4q9",
-        form.current,
-        "X4Mi8L9q9HTYDrE3U"
+    .sendForm(
+      "service_qtdfrdc",
+      "template_cjfz4q9",
+      form.current,
+      "X4Mi8L9q9HTYDrE3U"
       )
-      .catch(() => {
-        alert(
-          "The email service is temporarily unavailable. Please contact me directly on firdegjepali@gmail.com"
-        );
-      });
+      .catch((error) => {
+        if(error){
+          alert(
+            "The email service is temporarily unavailable. Please contact me directly on firdegjepali@gmail.com"
+            );
+          }
+          else{
+            submitMsg.style.display = 'block';
+          }
+        });
   };
   return (
     <section className="contact-wrapper">
         <div id="contact">
+      <div className="sent-message">
+        <div>
+        <h1>
+          Sent! Thanks for the message
+        </h1>
+        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+        </div>
+      </div>
           <div className="contact-text-wrapper">
             <div className="contact-text">
               <div className="contact-text-title">
@@ -111,8 +123,7 @@ export default function Contact() {
               <div className="form-button">
                 <button
                   type="submit"
-                  id={`${isSent ? "Sent" : "unSent"}`}
-                  disabled={!isFormValid}
+                  id="unSent"
                 >
                   {isSent ? "Sent! Thanks for the message" : "Send it my way"}
                 </button>
