@@ -1,6 +1,8 @@
 import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import "./Contact.css";
+import Fade from "react-reveal/Fade";
+
 export default function Contact() {
   const form = useRef();
   const [name, setName] = useState("");
@@ -19,12 +21,12 @@ export default function Contact() {
   const handleMessageChange = (event) => {
     setMessage(event.target.value);
   };
-  const loadingScreen = document.querySelector('.loading-screen')
+  const loadingScreen = document.querySelector(".loading-screen");
   const submitMsg = document.querySelector(".sent-message");
   const isFormValid =
     name.trim() !== "" && email.trim() !== "" && message.trim() !== "";
   const handleSubmit = (event) => {
-    loadingScreen.style.display = 'block' 
+    loadingScreen.style.display = "block";
     event.preventDefault();
     emailjs
       .sendForm(
@@ -36,14 +38,14 @@ export default function Contact() {
       .then(() => {
         submitMsg.style.display = "block";
         setTimeout(() => {
-          loadingScreen.style.display = 'none';
+          loadingScreen.style.display = "none";
         }, 1000);
       })
       .catch(() => {
         alert(
           "The email service is temporarily unavailable. Please contact me directly on firdegjepali@gmail.com"
         );
-        loadingScreen.style.display = 'none';
+        loadingScreen.style.display = "none";
       });
   };
   return (
@@ -51,7 +53,13 @@ export default function Contact() {
       <div id="contact">
         <div className="loading-screen">
           <div>
-          <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M304 48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zm0 416a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM48 304a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm464-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM142.9 437A48 48 0 1 0 75 369.1 48 48 0 1 0 142.9 437zm0-294.2A48 48 0 1 0 75 75a48 48 0 1 0 67.9 67.9zM369.1 437A48 48 0 1 0 437 369.1 48 48 0 1 0 369.1 437z"/></svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="1em"
+              viewBox="0 0 512 512"
+            >
+              <path d="M304 48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zm0 416a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM48 304a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm464-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM142.9 437A48 48 0 1 0 75 369.1 48 48 0 1 0 142.9 437zm0-294.2A48 48 0 1 0 75 75a48 48 0 1 0 67.9 67.9zM369.1 437A48 48 0 1 0 437 369.1 48 48 0 1 0 369.1 437z" />
+            </svg>
           </div>
         </div>
         <div className="sent-message">
@@ -67,79 +75,83 @@ export default function Contact() {
           </div>
         </div>
         <div className="contact-text-wrapper">
-          <div className="contact-text">
-            <div className="contact-text-title">
-              <h4>Contact</h4>
+          <Fade top cascade>
+            <div className="contact-text">
+              <div className="contact-text-title">
+                <h4>Contact</h4>
+              </div>
+              <div className="contact-text-main">
+                <h1>
+                  Let's connect and craft an extraordinary online masterpiece!
+                </h1>
+              </div>
+              <div className="contact-text-ending">
+                <h3>
+                  Got opportunities, ideas, or burning questions? Send them my
+                  way, and let's turn them into something remarkable!
+                </h3>
+              </div>
             </div>
-            <div className="contact-text-main">
-              <h1>
-                Let's connect and craft an extraordinary online masterpiece!
-              </h1>
+            <div className="email">
+              <a href="mailto:firdegjepali@gmail.com">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 512 512"
+                >
+                  <path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
+                </svg>
+                firdegjepali@gmail.com
+              </a>
             </div>
-            <div className="contact-text-ending">
-              <h3>
-                Got opportunities, ideas, or burning questions? Send them my
-                way, and let's turn them into something remarkable!
-              </h3>
-            </div>
-          </div>
-          <div className="email">
-            <a href="mailto:firdegjepali@gmail.com">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="1em"
-                viewBox="0 0 512 512"
-              >
-                <path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
-              </svg>
-              firdegjepali@gmail.com
-            </a>
-          </div>
+          </Fade>
         </div>
-        <div className="contact-input-wrapper">
-          <form
-            ref={form}
-            onSubmit={handleSubmit}
-            action=""
-            className="contact-form"
-          >
-            <div className="input-name-wrapper">
-              <label htmlFor="name">Name</label>
-              <input
-                type="text"
-                required
-                name="user_name"
-                value={name}
-                onChange={handleNameChange}
-              />
-            </div>
-            <div className="input-email-wrapper">
-              <label htmlFor="">Email</label>
-              <input
-                type="email"
-                required
-                name="user_email"
-                value={email}
-                onChange={handleEmailChange}
-              />
-            </div>
-            <div className="input-message-wrapper">
-              <label htmlFor="">Message</label>
-              <textarea
-                name="message"
-                required
-                value={message}
-                onChange={handleMessageChange}
-                id=""
-              ></textarea>
-            </div>
-            <div className="form-button">
-              <button type="submit" id="unSent">
-                {isSent ? "Sent! Thanks for the message" : "Send it my way"}
-              </button>
-            </div>
-          </form>
-        </div>
+        <Fade top>
+          <div className="contact-input-wrapper">
+            <form
+              ref={form}
+              onSubmit={handleSubmit}
+              action=""
+              className="contact-form"
+            >
+              <div className="input-name-wrapper">
+                <label htmlFor="name">Name</label>
+                <input
+                  type="text"
+                  required
+                  name="user_name"
+                  value={name}
+                  onChange={handleNameChange}
+                />
+              </div>
+              <div className="input-email-wrapper">
+                <label htmlFor="">Email</label>
+                <input
+                  type="email"
+                  required
+                  name="user_email"
+                  value={email}
+                  onChange={handleEmailChange}
+                />
+              </div>
+              <div className="input-message-wrapper">
+                <label htmlFor="">Message</label>
+                <textarea
+                  name="message"
+                  required
+                  value={message}
+                  onChange={handleMessageChange}
+                  id=""
+                ></textarea>
+              </div>
+              <div className="form-button">
+                <button type="submit" id="unSent">
+                  {isSent ? "Sent! Thanks for the message" : "Send it my way"}
+                </button>
+              </div>
+            </form>
+          </div>
+        </Fade>
       </div>
     </section>
   );
