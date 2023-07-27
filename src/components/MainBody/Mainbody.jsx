@@ -106,7 +106,7 @@ export default function Mainbody() {
         <div className="stats-wrapper">
           <Fade right cascade>
             <h1>My Current Stats</h1>
-            <div>
+            <div className="myStats">
               <div className="stats">
                 <img className="graph" src={Graph} alt="" />
                 <div className="stats-items">
