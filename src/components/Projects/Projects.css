@@ -94,7 +94,7 @@
 }
 @media (max-width:764px) {
   .project{
-    width: 100%;
+    width: 95%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -121,6 +121,4 @@
   .project-link{
     height: 2.5rem;
   }
-}
-@media (max-width:480px){
 }

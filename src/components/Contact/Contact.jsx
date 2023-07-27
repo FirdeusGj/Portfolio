@@ -64,7 +64,7 @@ export default function Contact() {
         </div>
         <div className="sent-message">
           <div>
-            <h1>Sent! Thanks for the message</h1>
+            <h1>Sent! <br/>Thanks for the message</h1>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="1em"

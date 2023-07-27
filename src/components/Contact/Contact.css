@@ -209,3 +209,28 @@ textarea{
     box-shadow: 0 0 3px 0 aliceblue;
     cursor: pointer;
 }
+@media (max-width:64rem) {
+    
+}
+@media (max-width:764px) {
+    #contact{
+        flex-direction: column;
+        gap: 4rem;
+        margin:1rem;
+    }
+    .contact-text-wrapper{
+        width: 100%;
+    }
+    .contact-input-wrapper{
+        width:100%;
+    }
+    .sent-message>div>h1{
+        font-size: 8vw;
+        text-align: center;
+    }
+}
+@media (max-width:480px) {
+    .contact-text-ending{
+        display:none;
+    }
+}
