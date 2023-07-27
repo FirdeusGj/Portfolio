@@ -14,6 +14,7 @@ import Tailwind from "../assets/TailwindCSS.png";
 import Typescript from "../assets/typescript.png";
 import Windows from "../assets/windowsLogo.png";
 import { Fade } from "react-reveal";
+import { languagesData } from "../Data/LanguagesData";
 
 export default function About() {
   const inputRef = useRef(null);
@@ -143,43 +144,49 @@ export default function About() {
                 />
               </div>
             </div>
-            <figure className="technology-img-wrapper">
-              <img
-                className="technology-img"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
-                alt=""
-              />
-            </figure>
-            <figure className="technology-img-wrapper">
-              <img className="technology-img" src={CSS} alt="" />
-            </figure>
-            <figure className="technology-img-wrapper">
-              <img className="technology-img" src={JavaScript} alt="" />
-            </figure>
-            <figure className="technology-img-wrapper">
-              <img className="technology-img" src={ReactLogo} alt="" />
-            </figure>
-            <figure className="technology-img-wrapper">
-              <img className="technology-img" src={Firebase} alt="" />
-            </figure>
-            <figure className="technology-img-wrapper">
-              <img className="technology-img" src={Typescript} alt="" />
-            </figure>
-            <figure className="technology-img-wrapper">
-              <img className="technology-img" src={Git} alt="" />
-            </figure>
-            <figure className="technology-img-wrapper">
-              <img className="technology-img" src={SASS} alt="" />
-            </figure>
-            <figure className="technology-img-wrapper">
-              <img className="technology-img" src={Tailwind} alt="" />
-            </figure>
-            <figure className="technology-img-wrapper">
-              <img className="technology-img" src={NextJs} alt="" />
-            </figure>
-            <figure className="technology-img-wrapper">
-              <img className="technology-img" src={Redux} alt="" />
-            </figure>
+            <div className="technology-imgs">
+              {languagesData.map((elem) => (
+                <>
+                  <figure className="technology-img-wrapper">
+                    <img
+                      className="technology-img"
+                      src={elem.languageImage}
+                      alt=""
+                    />
+                  </figure>
+                </>
+              ))}
+              {/* <figure className="technology-img-wrapper">
+                <img className="technology-img" src={CSS} alt="" />
+              </figure>
+              <figure className="technology-img-wrapper">
+                <img className="technology-img" src={JavaScript} alt="" />
+              </figure>
+              <figure className="technology-img-wrapper">
+                <img className="technology-img" src={ReactLogo} alt="" />
+              </figure>
+              <figure className="technology-img-wrapper">
+                <img className="technology-img" src={Firebase} alt="" />
+              </figure>
+              <figure className="technology-img-wrapper">
+                <img className="technology-img" src={Typescript} alt="" />
+              </figure>
+              <figure className="technology-img-wrapper">
+                <img className="technology-img" src={Git} alt="" />
+              </figure>
+              <figure className="technology-img-wrapper">
+                <img className="technology-img" src={SASS} alt="" />
+              </figure>
+              <figure className="technology-img-wrapper">
+                <img className="technology-img" src={Tailwind} alt="" />
+              </figure>
+              <figure className="technology-img-wrapper">
+                <img className="technology-img" src={NextJs} alt="" />
+              </figure>
+              <figure className="technology-img-wrapper">
+                <img className="technology-img" src={Redux} alt="" />
+              </figure> */}
+            </div>
           </div>
         </Fade>
       </div>
