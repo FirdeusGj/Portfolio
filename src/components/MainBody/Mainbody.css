@@ -20,7 +20,7 @@ main {
   background-color: #242424;
   background:linear-gradient(black , transparent,black), url('../assets/mainBackground.jpg');
   /* background: linear-gradient(#242424 60%, black); */
-  background-size: 120%;
+  background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
   height: 100vh;
@@ -39,9 +39,6 @@ main {
   align-items: center;
   justify-content: space-between;
   color:white;
-}
-.introduction {
-  width: 50%;
 }
 .introduction h1{
  font-size: 4rem;
@@ -150,5 +147,86 @@ main {
   }
   100% {
     transform: translateY(-3px);
+  }
+}
+@media (max-width: 64rem) {
+  .mainbody{
+    justify-content:center;
+  }
+  .mainbody-wrapper{
+    width: 100%;
+    justify-content: center;
+  }
+  .stats{
+    justify-content: end;
+  }
+  .stats-wrapper{
+    justify-content: end;
+  }
+  .stats-wrapper>h1{
+    display: none;
+  }
+  .introduction{
+    display: flex;
+    flex-direction: column;
+  }
+  .introduction h1{
+    font-size: 3rem;
+   }
+   .introduction h2{
+     font-size: 2.38rem;
+   }
+   .introduction h3{
+     font-size: 1.53rem;
+   }
+   .introduction h4{
+     font-size: 1.15rem;
+     margin-bottom: 10px;
+   }
+   .stats-projects, .stats-contributions, .stats-days, .stats-repositories{
+    font-size: 0.76rem;
+   }
+   .graph{
+    height: auto;
+    width: 14rem;
+   }
+}
+@media (max-width: 764px){
+  .mainbody-wrapper{
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70%;
+  }
+  .stats-wrapper{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .graph{
+    display: none;
+  }
+  .stats{
+    width: 100%;
+    border: 3px solid;
+  border-image: linear-gradient(90deg, transparent, white, rgb(124, 124, 248), transparent) 1;
+  }
+  .stats-items{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .introduction{
+    width: 20rem !important;
+  }
+  .react-reveal{
+    width: 80%;
+  }
+}
+@media (max-width:480px) {
+  .react-reveal{
+    width: 100%;
   }
 }

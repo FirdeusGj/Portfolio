@@ -8,7 +8,7 @@
   background-color: rgb(249, 252, 255);
   border-radius: 1rem;
   top: 2vh;
-  box-shadow: 0 0 10px 0 black;
+  box-shadow: 0 0 10px 0 white;
   z-index: 99;
 }
 .nav-wrapper {
@@ -64,4 +64,19 @@
 .nav-li {
   margin: 0 10px;
   font-size: 1.2rem;
+}
+@media (max-width: 64rem) {
+  .nav{
+    width: 100%;
+    top:0;
+    border-radius: 0;
+  }
+}
+@media (max-width: 480px){
+  .nav{
+    justify-content: center;
+  }
+  .nav-li{
+    font-size: 0.9rem;
+  }
 }
