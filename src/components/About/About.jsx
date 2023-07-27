@@ -13,7 +13,6 @@ import SASS from "../assets/sass.png";
 import Tailwind from "../assets/TailwindCSS.png";
 import Typescript from "../assets/typescript.png";
 import Windows from "../assets/windowsLogo.png";
-import { Fade } from "react-reveal";
 import { languagesData } from "../Data/LanguagesData";
 
 export default function About() {
@@ -45,7 +44,6 @@ export default function About() {
       <div className="about-border"></div>
       <div className="about-border1"></div>
       <div className="about-content">
-        <Fade left cascade>
           <div className="about">
             <div className="about-images">
               <div className="about-bg-img"></div>
@@ -182,7 +180,6 @@ export default function About() {
               ))}
             </div>
           </div>
-        </Fade>
       </div>
     </div>
   );

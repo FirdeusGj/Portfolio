@@ -1,7 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import "./Contact.css";
-import Fade from "react-reveal/Fade";
 
 export default function Contact() {
   const form = useRef();
@@ -75,7 +74,6 @@ export default function Contact() {
           </div>
         </div>
         <div className="contact-text-wrapper">
-          <Fade top cascade>
             <div className="contact-text">
               <div className="contact-text-title">
                 <h4>Contact</h4>
@@ -104,9 +102,7 @@ export default function Contact() {
                 firdegjepali@gmail.com
               </a>
             </div>
-          </Fade>
         </div>
-        <Fade top>
           <div className="contact-input-wrapper">
             <form
               ref={form}
@@ -151,7 +147,6 @@ export default function Contact() {
               </div>
             </form>
           </div>
-        </Fade>
       </div>
     </section>
   );

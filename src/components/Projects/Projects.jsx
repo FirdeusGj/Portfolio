@@ -1,26 +1,20 @@
 import React from "react";
 import "./Projects.css";
 import { projectsData } from "../Data/ProjectsData";
-import { Fade } from "react-reveal";
 
 export default function Projects() {
   return (
     <div id="projects">
-      <Fade top cascade>
       <h1>My Projects</h1>
       <hr />
-      </Fade>
       {projectsData.map((elem) => (
         <>
           <div key={elem.id} className="project">
-            <Fade left>
               <figure className="project-img">
                 <img src={elem.image} alt="" />
               </figure>
-            </Fade>
             <div className="project-info">
               <div className="project-text">
-                <Fade right cascade>
                   <h1>{elem.title}</h1>
                   <div className="project-description">
                     <h3> {elem.description} </h3>
@@ -58,7 +52,6 @@ export default function Projects() {
                       </svg>
                     </a>
                   </div>
-                </Fade>
               </div>
             </div>
           </div>
