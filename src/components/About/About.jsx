@@ -95,32 +95,56 @@ export default function About() {
                 <h1>About me</h1>
               </div>
               <div className="about-para">
-                <h4>
-                  My name is Firdeus Gjepali, a frontend developer with a deep
-                  passion for building responsive web applications to satisfy
-                  tons of users around the world.
-                </h4>
-                <br />
-                <h4>
-                  Ever since I was 11 years old, I harbored an ardent desire to
-                  engage in this field, which was initially sparked when my
-                  school introduced me to Scratch, a programming tool through
-                  which I created a small game. Although my focus lies primarily
-                  in frontend development at present, I am committed to
-                  continuous growth and expanding my range of programming
-                  languages, as I aspire to achieve greater heights in my
-                  career. A little over a year ago, I embarked on a regular
-                  learning journey, rapidly advancing my knowledge in various
-                  aspects of frontend development due to my unwavering
-                  enthusiasm for the craft.
-                </h4>
-                <br />
-                <h4>
-                  Today, I continue to progress swiftly, dedicating myself to
-                  learning something new every day. Please find below an
-                  overview of my projects, which serve as tangible evidence of
-                  my skills.
-                </h4>
+                <div className="descriptionPc">
+                  <h4>
+                    My name is Firdeus Gjepali, a frontend developer with a deep
+                    passion for building responsive web applications to satisfy
+                    tons of users around the world.
+                  </h4>
+                  <br />
+                  <h4>
+                    Ever since I was 11 years old, I harbored an ardent desire
+                    to engage in this field, which was initially sparked when my
+                    school introduced me to Scratch, a programming tool through
+                    which I created a small game. Although my focus lies
+                    primarily in frontend development at present, I am committed
+                    to continuous growth and expanding my range of programming
+                    languages, as I aspire to achieve greater heights in my
+                    career. A little over a year ago, I embarked on a regular
+                    learning journey, rapidly advancing my knowledge in various
+                    aspects of frontend development due to my unwavering
+                    enthusiasm for the craft.
+                  </h4>
+                  <br />
+                  <h4>
+                    Today, I continue to progress swiftly, dedicating myself to
+                    learning something new every day. Please find below an
+                    overview of my projects, which serve as tangible evidence of
+                    my skills.
+                  </h4>
+                </div>
+                <div className="descriptionMobile">
+                  <h4>
+                    I'm Firdeus Gjepali, a frontend developer passionate about
+                    building responsive web applications to delight users
+                    worldwide.
+                  </h4>
+                  <br />
+                  <h4>
+                    Ever since I was 11 years old, I harbored an ardent desire
+                    to engage in this field, which was initially sparked when my
+                    school introduced me to Scratch, a programming tool through
+                    which I created a small game. While my focus is currently on
+                    frontend development, I'm dedicated to continuous growth,
+                    learning new programming languages, and achieving greater
+                    heights in my career.
+                  </h4>
+                  <br />
+                  <h4>
+                    Here's an overview of my projects showcasing my skills down
+                    below which I've worked on.
+                  </h4>
+                </div>
               </div>
             </div>
           </div>
@@ -147,7 +171,7 @@ export default function About() {
             <div className="technology-imgs">
               {languagesData.map((elem) => (
                 <>
-                  <figure className="technology-img-wrapper">
+                  <figure key={elem.id} className="technology-img-wrapper">
                     <img
                       className="technology-img"
                       src={elem.languageImage}
@@ -156,36 +180,6 @@ export default function About() {
                   </figure>
                 </>
               ))}
-              {/* <figure className="technology-img-wrapper">
-                <img className="technology-img" src={CSS} alt="" />
-              </figure>
-              <figure className="technology-img-wrapper">
-                <img className="technology-img" src={JavaScript} alt="" />
-              </figure>
-              <figure className="technology-img-wrapper">
-                <img className="technology-img" src={ReactLogo} alt="" />
-              </figure>
-              <figure className="technology-img-wrapper">
-                <img className="technology-img" src={Firebase} alt="" />
-              </figure>
-              <figure className="technology-img-wrapper">
-                <img className="technology-img" src={Typescript} alt="" />
-              </figure>
-              <figure className="technology-img-wrapper">
-                <img className="technology-img" src={Git} alt="" />
-              </figure>
-              <figure className="technology-img-wrapper">
-                <img className="technology-img" src={SASS} alt="" />
-              </figure>
-              <figure className="technology-img-wrapper">
-                <img className="technology-img" src={Tailwind} alt="" />
-              </figure>
-              <figure className="technology-img-wrapper">
-                <img className="technology-img" src={NextJs} alt="" />
-              </figure>
-              <figure className="technology-img-wrapper">
-                <img className="technology-img" src={Redux} alt="" />
-              </figure> */}
             </div>
           </div>
         </Fade>

@@ -102,6 +102,9 @@
   margin: 0.3rem 0;
   font-weight: lighter;
 }
+.descriptionMobile{
+  display: none;
+}
 .infos-items>ul{
   list-style: none;
   text-align: center;
@@ -275,11 +278,17 @@
     filter: none;
     box-shadow: 0 0 5px 0 rgb(91, 173, 246);
   }
+  .descriptionMobile{
+    display: block;
+  }
+  .descriptionPc{
+    display: none;
+  }
   .technology-imgs{
     display: flex;
   }
   .about{
-    flex-direction: column-reverse;
+    flex-direction: column;
     width: 90%;
   }
   .about-images{
@@ -290,10 +299,10 @@
     height: 100%;
   }
   .about-title{
-    font-size: 2.8vw;
+    font-size: 1rem;
   }
   .about-para{
-    font-size: 2.5vw;
+    font-size: 1rem;
   }
   .technology{
     height: 6rem;
@@ -308,17 +317,33 @@
   .input-wrapper{
     width: 90vw;
   }
+  .technology-img-wrapper{
+    width: calc(100vw/ 12);
+  }
   .technology-imgs{
     height: 3rem;
-    width: 95vw;
+    width: 98vw;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .technology-img-wrapper{
-    width: calc(100% / 11);
-  }
 }
 @media (max-width:480px) {
-  
+  .about-title{
+    font-size: 0.8rem;
+  }
+  .about-para{
+    font-size: 0.8rem;
+  }
+  .technology-img-wrapper{
+    width: calc(110vw / 7);
+  }
+  .technology-imgs{
+    flex-wrap: wrap;
+    width: 110vw;
+    height: 3rem;
+  }
+  .technology{
+    height: 9rem;
+  }
 }

@@ -9,6 +9,7 @@ import MovieProject from '../assets/movieFinder.png'
 
 export const projectsData = [
   {
+    id:1,
     image: GoogleProject,
     title: 'Google Clone',
     description: "I have developed a personal rendition of a search engine resembling Google. This search engine is designed to retrieve search results based on the user's input, mimicking the functionality of the original Google search engine.",
@@ -17,6 +18,7 @@ export const projectsData = [
     githubLink: "https://github.com/FirdeusGj/Firdeus-Google-Clone",
   },
   {
+    id:2,
     image: FitnessProject,
     title: 'Fitness App',
     description: "This website represents a fitness application designed to be affiliated with a gym. It offers various fitness plans that can be accessed through monthly subscription services. Furthermore, the website showcases testimonials from satisfied users and utilizes captivating animations to enhance the user experience.",
@@ -25,6 +27,7 @@ export const projectsData = [
     githubLink: "https://github.com/FirdeusGj/Fitness-Website",
   },
   {
+    id:3,
     image: EcomProject,
     title: 'Ecommerce App',
     description: "The website in question offers a wide selection of books for purchase, accompanied by advantageous pricing. Additionally, users have the ability to add books to their shopping cart. Furthermore, the website incorporates a filtering feature that enables sorting of books based on price, ranging from the highest to the lowest, as an illustrative example.",
@@ -33,6 +36,7 @@ export const projectsData = [
     githubLink: "https://github.com/FirdeusGj/Library-react",
   },
   {
+    id:4,
     image: HuluProject,
     title: 'Hulu Clone 2.0',
     description: "I have created an enhanced version of a streaming platform similar to Hulu, referred to as Hulu Clone 2.0, utilizing the Firebase framework. I have developed this streaming service that emulates the core features and functionalities of the original Hulu platform.",
@@ -41,6 +45,7 @@ export const projectsData = [
     githubLink: "https://github.com/FirdeusGj/Hulu-2.0-React",
   },
   {
+    id:5,
     image: MovieProject,
     title: 'Movie Finder',
     description: 'The Movie Finder project is a movie search application designed to locate any film. Users can easily locate movies of their choice. The application provides detailed information about each movie. This ensures that users can find their desired movies and also gather information about them.',
@@ -49,6 +54,7 @@ export const projectsData = [
     githubLink: "https://github.com/FirdeusGj/Movie-Finder-ReactApp",
   },
   {
+    id:6,
     image: CarsProject,
     title: "Car Suggestions",
     description: "This is an automotive recommendation platform that presents data on the highest-selling car models of 2022 and provides information on the most affordable prices available to help users find the best deals. The motivation behind this project was to create a unique offering that deviates from the conventional approach of typical car sales websites.",

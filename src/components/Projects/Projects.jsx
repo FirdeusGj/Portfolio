@@ -12,7 +12,7 @@ export default function Projects() {
       </Fade>
       {projectsData.map((elem) => (
         <>
-          <div className="project">
+          <div key={elem.id} className="project">
             <Fade left>
               <figure className="project-img">
                 <img src={elem.image} alt="" />

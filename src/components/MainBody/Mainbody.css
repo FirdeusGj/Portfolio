@@ -225,8 +225,3 @@ main {
     width: 80%;
   }
 }
-@media (max-width:480px) {
-  .react-reveal{
-    width: 100%;
-  }
-}
