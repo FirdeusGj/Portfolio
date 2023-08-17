@@ -6,7 +6,6 @@ export default function Projects() {
   return (
     <div id="projects">
       <h1>My Projects</h1>
-      <hr />
       {projectsData.map((elem) => (
         <>
           <div key={elem.id} className="project">

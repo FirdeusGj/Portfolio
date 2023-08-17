@@ -1,5 +1,5 @@
 .nav {
-  position: fixed;
+  position: absolute;
   width: 64rem;
   display: flex;
   justify-content: space-around;
@@ -8,7 +8,7 @@
   background-color: rgb(249, 252, 255);
   border-radius: 1rem;
   top: 2vh;
-  box-shadow: 0 0 10px 0 white;
+  box-shadow: 0 0 5px 0 rgb(239, 243, 246);
   z-index: 99;
 }
 .nav-wrapper {
@@ -27,8 +27,6 @@
   width: auto;
   height: 100%;
   display: block;
-  -webkit-filter:drop-shadow(0 0 2px black);
-  filter:drop-shadow(0 0 2px black);
 }
 .nav-ul {
   list-style: none;
@@ -44,10 +42,6 @@
 }
 .nav-ul>.nav-li:nth-of-type(4):hover a{
   text-decoration: none;
-  box-shadow: 0 0 5px 0 black;
-}
-.nav-li:nth-of-type(4):hover{
-  transform: scale(1.03);
 }
 .nav-li:nth-of-type(4):active a{
   background-color: transparent;

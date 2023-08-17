@@ -44,7 +44,6 @@ export default function Mainbody() {
   const daysDifference = Math.floor(
     (today.getTime() - startDate.getTime()) / (1000 * 3600 * 24)
   );
-  console.log(daysDifference);
   return (
     <main className="mainbody">
       <div className="background"></div>
@@ -129,19 +128,19 @@ export default function Mainbody() {
                 </div>
                 <div className="stats-contributions">
                   <h1>
-                    <Counter targetNumber={251} startValue={150} symbol={"+"} />
+                    <Counter targetNumber={321} startValue={200} symbol={"+"} />
                   </h1>
                   <h5>Github Contributions</h5>
                 </div>
                 <div className="stats-repositories">
                   <h1>
-                    <Counter targetNumber={14} startValue={0} symbol={"+"} />
+                    <Counter targetNumber={16} startValue={0} symbol={"+"} />
                   </h1>
                   <h5>Github repositories</h5>
                 </div>
                 <div className="stats-projects">
                   <h1>
-                    <Counter targetNumber={7} startValue={0} symbol={"+"} />
+                    <Counter targetNumber={6} startValue={0} symbol={"+"} />
                   </h1>
                   <h5>Finished Projects</h5>
                 </div>
