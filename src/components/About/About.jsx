@@ -1,96 +1,15 @@
-import React, { useRef } from "react";
+import React from "react";
 import "./About.css";
-import AboutImage from "../assets/aboutImage.jpg";
-import PFP from "../assets/theLogo.png";
-import CSS from "../assets/CSS.png";
-import Firebase from "../assets/firebase.png";
-import Git from "../assets/git.png";
-import JavaScript from "../assets/javascript.png";
-import NextJs from "../assets/nextjs.png";
-import ReactLogo from "../assets/react.png";
-import Redux from "../assets/redux.jpg";
-import SASS from "../assets/sass.png";
-import Tailwind from "../assets/TailwindCSS.png";
-import Typescript from "../assets/typescript.png";
-import Windows from "../assets/windowsLogo.png";
 import { languagesData } from "../Data/LanguagesData";
 
 export default function About() {
-  const inputRef = useRef(null);
-  const goToElement = () => {
-    const elementId = inputRef.current.value;
-    const element = document.getElementById(elementId);
-    const input = document.querySelector("input");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-      input.value = "";
-    } else if (elementId === "resume") {
-      window.open(
-        "https://drive.google.com/file/d/16fOFFY5AZf6ir5IM_XMw2xGMUkruPFVM/view"
-      );
-      input.value = "";
-    } else {
-      alert("Use only home, projects, contact or resume");
-    }
-  };
-  const handleKeyPress = (e) => {
-    if (e.key === "Enter") {
-      goToElement();
-    }
-  };
-
   return (
     <div className="about-wrapper" id="about">
-      <div className="about-border"></div>
-      <div className="about-border1"></div>
       <div className="about-content">
           <div className="about">
-            <div className="about-images">
-              <div className="about-bg-img"></div>
-              <div className="infos">
-                <div className="infos-items">
-                  <h2>Find out more</h2>
-                  <ul>
-                    <li>
-                      <h3>
-                        <a
-                          href="https://drive.google.com/file/d/16fOFFY5AZf6ir5IM_XMw2xGMUkruPFVM/view"
-                          target="_blank"
-                        >
-                          View Resume
-                        </a>
-                      </h3>
-                    </li>
-                    <li>
-                      <h3>
-                        <a href="#contact">Contact me</a>
-                      </h3>
-                    </li>
-                    <li>
-                      <h3>
-                        <a
-                          href="https://www.linkedin.com/in/firdeus-gjepali-832869245/"
-                          target="_blank"
-                        >
-                          LinkedIn
-                        </a>
-                      </h3>
-                    </li>
-                    <li>
-                      <h3>
-                        <a href="https://github.com/FirdeusGj" target="_blank">
-                          Github
-                        </a>
-                      </h3>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <img src={PFP} className="pfp" />
-            </div>
             <div className="about-text">
               <div className="about-title">
-                <h1>About me</h1>
+                <h1 style={{marginBottom:"20px"}}>About me</h1>
               </div>
               <div className="about-para">
                 <div className="descriptionPc">
@@ -145,39 +64,18 @@ export default function About() {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="technology">
-            <div className="windows-wrapper">
-              <figure>
-                <button onClick={goToElement}>
-                  <img
-                    src={Windows}
-                    className="technology-img windows"
-                    alt=""
-                  />
-                </button>
-              </figure>
-              <div className="input-wrapper">
-                <input
-                  type="text"
-                  ref={inputRef}
-                  placeholder="home/projects/contact/resume"
-                  onKeyPress={handleKeyPress}
-                />
+            <div className="technology-stack">
+              <div className="technology">
+                <h1 style={{color:'white', marginBottom:"20px"}}><span style={{color: "#b9deff"}}>Technology</span> Stack</h1>
+                <div className="technology-imgs">
+                {languagesData.map((elem) => (
+                  <div className="technology__img--wrapper">
+                    <img className="technology__img" src={elem.languageImage} alt="" />
+                    <h5>{elem.languageName}</h5>
+                  </div>
+                )) }
+                </div>
               </div>
-            </div>
-            <div className="technology-imgs">
-              {languagesData.map((elem) => (
-                <>
-                  <figure key={elem.id} className="technology-img-wrapper">
-                    <img
-                      className="technology-img"
-                      src={elem.languageImage}
-                      alt=""
-                    />
-                  </figure>
-                </>
-              ))}
             </div>
           </div>
       </div>

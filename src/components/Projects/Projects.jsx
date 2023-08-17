@@ -11,7 +11,7 @@ export default function Projects() {
         <>
           <div key={elem.id} className="project">
               <figure className="project-img">
-                <img src={elem.image} alt="" />
+                <img src={elem.image} alt="img" />
               </figure>
             <div className="project-info">
               <div className="project-text">
@@ -26,6 +26,7 @@ export default function Projects() {
                     <a
                       href={elem.githubLink}
                       target="_blank"
+                      rel="noreferrer"
                       className="project-link"
                     >
                       Github
@@ -40,6 +41,7 @@ export default function Projects() {
                     <a
                       href={elem.link}
                       target="_blank"
+                      rel="noreferrer"
                       className="project-link"
                     >
                       Link

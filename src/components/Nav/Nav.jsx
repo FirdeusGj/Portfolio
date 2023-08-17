@@ -7,7 +7,7 @@ export default function Nav() {
     <div className="nav-wrapper" id="home">
       <nav className="nav">
         <div className="logo-wrapper">
-          <img className="logo" src={Logo}/>
+          <img className="logo" src={Logo} alt="logo"/>
         </div>
         <div className="nav-ul-wrapper">
           <ul className="nav-ul">

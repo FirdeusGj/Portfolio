@@ -1,9 +1,5 @@
 .about {
   width: 64rem;
-  background-image: url("../assets/windowsBackground.jpg");
-  background-position: center;
-  background-size: 140%;
-  background-repeat: no-repeat;
   border-radius: 1rem 1rem 0 0;
   margin: 0 auto;
   display: flex;
@@ -14,8 +10,6 @@
   padding: 2rem 0;
 }
 .about-content {
-  box-shadow: 0 0 3px 0 white;
-  border-radius: 1rem;
   z-index: 3;
 }
 .about-wrapper {
@@ -28,227 +22,73 @@
   background:linear-gradient(black ,#101010);
 }
 .about-text {
-  width: 60%;
+  width: 50%;
   color: white;
-  margin-right: 1rem;
-  background: rgba(255, 255, 255, 0);
-  border-radius: 0;
-  box-shadow: 0 0 10px 0 white;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border: 2px solid;
-  border-image: linear-gradient(224deg, transparent, white, rgb(124, 124, 248), transparent) 1;
   display: flex;
-  align-items: center;
-  filter: drop-shadow(0 0 1px black);
-  justify-content: center;
   flex-direction: column;
-  text-align: center;
-  padding: 5px;
-}
-
-/* ABOUT IMAGES */
-.about-images{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40%;
-  background-position: center;
-  background-size: 140%;
-  border: 2px solid;
-  border-image: linear-gradient(18deg, transparent, white, rgb(124, 124, 248), transparent) 1;
-  height: 21.3rem;
-  margin:2rem;
-  position: relative;
-  box-shadow: 0 0 10px 0 white;
-  overflow: hidden;
-  position: relative;
-}
-.about-images:hover .about-bg-img{
-  background-size: 150%;
-  filter: blur(2px) brightness(50%);
-}
-.about-images:hover .infos{
-  opacity: 1;
-  transform: scale(1);
-  box-shadow: 0 0 10px 0 white;
-  visibility: visible;
-}
-.infos{
-  opacity: 0;
-  visibility: hidden;
-  transition: all 300ms ease-in-out;
-  transform: scale(0.8);
-  position: absolute;
-  color:white;
-  background-color: rgba(240, 248, 255, 0.264);
-  border-radius: 10%;
-  height: 70%;
-  width: 15rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.infos-items{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.infos-items>h2{
-  margin-bottom: 1rem;
-}
-.infos-items>ul>li>h3{
-  margin: 0.3rem 0;
-  font-weight: lighter;
+  border-left: 4px solid;
+  border-image: linear-gradient(white, transparent) 1 1;
+  padding-left: 10px;
 }
 .descriptionMobile{
   display: none;
 }
-.infos-items>ul{
-  list-style: none;
-  text-align: center;
-  padding: 0;
+.technology__img{
+  width: 70px;
+  height: 70px;
+  transition: all 200ms ease-in-out;
+  object-fit: contain;
+  filter: drop-shadow(0 0 1px white);
 }
-.infos-items>ul>li>h3>a{
-  text-decoration: none;
-  color:whitesmoke;
-  transition: all 100ms ease-in-out;
-  padding: 5px;
-}
-.infos-items>ul>li>h3>a:hover{
-  border-radius: 3px;
-  background-color: rgba(245, 245, 245, 0.351);
-}
-.infos-items>h3:nth-child(1){
-  margin-bottom: 1rem;
-}
-.about-images:hover .pfp{
-  transform: translate(150%, -150%) rotate(360deg) scale(0.6);
-}
-.about-bg-img{
-  position: absolute;
-  transition: all 300ms ease-in-out;
-  width: 100%;
-  height: 100%;
-  background-size: 140%;
-  background-position: center;
-  background-image: url('../assets/aboutImage.jpg');
-}
-.about-border{
-  height: 32.3rem;
-  width: 64rem;
-  border-radius: 10px;
-  position: absolute;
-  transform: translate(1%, 4%);
-  filter: drop-shadow(0 0 15px rgba(0, 0, 255, 0.568));
-  background:linear-gradient(333deg , rgb(124, 124, 248) 30%,rgb(1, 88, 211), transparent 50%);
-}
-.about-border1{
-  height: 32.3rem;
-  border-radius: 10px;
-  width: 64rem;
-  position: absolute;
-  transform: translate(-1%, -4%);
-  border:3px solid;
-  border-image: linear-gradient(154deg , rgb(124, 124, 248),rgb(1, 88, 211), transparent 50%) 1;
-  filter: drop-shadow(0 0 15px rgba(0, 0, 255, 0.568));
-}
-.pfp {
-  transition: all 500ms ease-in-out;
-  height: 4rem;
-  filter: drop-shadow(0 0 3px white);
-  border-radius: 35%;
-  position: absolute;
-  z-index: 99;
-}
-/* technology */
-.technology {
-  width: 64rem;
-  background-color: #242424;
-  margin: 0 auto;
+.technology{
   display: flex;
-  justify-content: start;
+  flex-direction: column;
   align-items: center;
-  border-radius: 0 0 1rem 1rem;
-  height: 3rem;
-  position: relative;
-  overflow: hidden;
-}
-.windows {
-  filter: invert(1);
-  margin: 0 1rem;
+  justify-content: center;
 }
 .technology-imgs{
   display: flex;
-  height: 100%;
-  width: 100%;
-}
-.technology-img {
-  height: 1.7rem;
-}
-.technology-img-wrapper {
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.048);
-  display: flex;
-  width: calc(100% / 12);
   align-items: center;
   justify-content: center;
-  border: 1px solid #242424;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
-.technology-img-wrapper:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-.windows-wrapper {
+.technology__img--wrapper{
   display: flex;
+  margin: 0 10px;
+  flex-direction: column;
   align-items: center;
-  margin-right: 1rem;
-}
-.windows-wrapper button {
-  border: none;
-  padding: 2rem 0;
-  background: none;
-}
-.windows-wrapper button:hover {
-  cursor: pointer;
-}
-.about-para h4 {
-  font-weight: lighter;
-}
-.input-wrapper {
-  height: 3rem;
-  background-color: white;
-  align-items: center;
-  display: flex;
-  box-shadow: inset 0 0 0 1px gray;
   justify-content: center;
-  margin-right: -1rem;
-  width: 19rem;
 }
-.input-wrapper input {
-  border: none;
-  height: 70%;
-  font-size: 1.3rem;
-  width: 95%;
+.technology__img:hover{
+  transform: scale(1.1);
 }
-.input-wrapper input:focus {
-  outline: none;
+.technology__img:hover + h5{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(100%);
+  transform: scale(1);
 }
-@media (max-width:1060px) {
-  .about-border,
-  .about-border1{
-    display: none;
-  }
+.technology__img--wrapper > h5{
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+  color: white;
+  margin-top: 5px;
+  transform: translateY(-100%) scale(0.1);
+  visibility: hidden;
+}
+.technology-stack{
+  width: 45%;
 }
 @media (max-width:64rem) {
   .about-content{
     width: calc(64rem / 1.3);
   }
-  .about-images{
-    height: 16.38rem;
-  }
   .about{
     width: 100%;
+  }
+  .technology__img{
+    width: 50px;
   }
   .about-title{
     font-size: calc(1em / 1.3);
@@ -256,37 +96,15 @@
   .about-para{
     font-size: calc(1rem / 1.3);
   }
-  .technology-img{
-    height: calc(1.7rem / 1.3);
-  }
-  .technology-img-wrapper{
-    width: calc(3rem/1.3);
-  }
-  .technology{
-    width: calc(64rem / 1.3);
-  }
-  .technology-imgs{
-    width: 100%;
-  }
-  .technology-img-wrapper{
-    width: calc(100% / 12);
-  }
-  .input-wrapper{
-    width: calc(19rem/1.3);
-  }
-  ::placeholder{
-    font-size: 1rem;
-  }
-  .about-images:hover .pfp{
-    transform: translate(150%, -100%) rotate(360deg) scale(0.6);
-  }
 }
 @media (max-width:764px) {
   .about-text{
     width: 80vw;
     margin: 0 auto;
     filter: none;
-    box-shadow: 0 0 5px 0 rgb(91, 173, 246);
+  }
+  .technology-stack{
+    width: 80vw;
   }
   .descriptionMobile{
     display: block;
@@ -294,16 +112,9 @@
   .descriptionPc{
     display: none;
   }
-  .technology-imgs{
-    display: flex;
-  }
   .about{
     flex-direction: column;
     width: 90%;
-  }
-  .about-images{
-    width: 80vw;
-    height: 17rem;
   }
   .about-wrapper{
     height: 100%;
@@ -314,46 +125,21 @@
   .about-para{
     font-size: 1rem;
   }
-  .technology{
-    height: 6rem;
-    flex-direction: column;
-  }
   .windows-wrapper button{
     padding: 0
   }
-  .technology{
-    width: 100%;
-  }
   .input-wrapper{
     width: 90vw;
-  }
-  .technology-img-wrapper{
-    width: calc(100vw/ 12);
-  }
-  .technology-imgs{
-    height: 3rem;
-    width: 98vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 }
 @media (max-width:480px) {
   .about-title{
     font-size: 0.8rem;
   }
+  .technology > h1{
+    font-size: 1.5rem;
+  }
   .about-para{
     font-size: 0.8rem;
-  }
-  .technology-img-wrapper{
-    width: calc(110vw / 7);
-  }
-  .technology-imgs{
-    flex-wrap: wrap;
-    width: 110vw;
-    height: 3rem;
-  }
-  .technology{
-    height: 9rem;
   }
 }

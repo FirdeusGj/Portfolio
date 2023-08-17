@@ -7,8 +7,8 @@ export default function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  // eslint-disable-next-line
   const [isSent, setIsSent] = useState(false);
-
   const handleNameChange = (event) => {
     setName(event.target.value);
   };
@@ -22,6 +22,7 @@ export default function Contact() {
   };
   const loadingScreen = document.querySelector(".loading-screen");
   const submitMsg = document.querySelector(".sent-message");
+  // eslint-disable-next-line
   const isFormValid =
     name.trim() !== "" && email.trim() !== "" && message.trim() !== "";
   const handleSubmit = (event) => {
