@@ -199,11 +199,14 @@ textarea{
     cursor: pointer;
 }
 @media (max-width:64rem) {
-    
+    #contact{
+        border-image: linear-gradient(22deg, white, transparent, white) 1 1
+    }
 }
 @media (max-width:764px) {
     #contact{
         flex-direction: column;
+        border-image: linear-gradient(60deg, white, transparent, white) 1 1;
         gap: 4rem;
         margin:1rem;
     }
