@@ -36,7 +36,7 @@ main {
   height: 100%;
   align-items: center;
   justify-content: space-between;
-  color:white;
+  color:aliceblue;
 }
 .introduction h1{
  font-size: 4rem;
@@ -54,7 +54,7 @@ main {
   margin-bottom: 10px;
 }
 .introduction-link{
-  border: 1px solid white;
+  border: 1px solid aliceblue;
   padding: 6px;
   height: 1rem;
   width: 1rem;
@@ -125,7 +125,7 @@ main {
 .scroll-icon {
   width: 20px;
   height: 30px;
-  border: 2px solid white;
+  border: 2px solid aliceblue;
   border-radius: 24px;
   display: flex;
   justify-content: center;
@@ -133,7 +133,7 @@ main {
 }
 .scroll-icon:after {
   content: "";
-  background-color: white;
+  background-color: aliceblue;
   width: 4px;
   height: 6px;
   border-radius: 2px;
@@ -165,6 +165,7 @@ main {
     display: none;
   }
   .introduction{
+    margin-left:20px;
     display: flex;
     flex-direction: column;
   }
@@ -217,9 +218,15 @@ main {
     justify-content: space-around;
   }
   .introduction{
-    width: 20rem !important;
+    max-width: 20rem !important;
+    width: 100%;
   }
   .myStats{
     width: 80%;
+  }
+}
+@media (max-width:480px){
+  .myStats{
+    width: 100%;
   }
 }

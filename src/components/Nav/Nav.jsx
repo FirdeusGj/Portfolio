@@ -11,9 +11,9 @@ export default function Nav() {
         </div>
         <div className="nav-ul-wrapper">
           <ul className="nav-ul">
-            <li className="nav-li"><a href="#home">Home</a></li>
-            <li className="nav-li"><a href="#about">About</a></li>
-            <li className="nav-li"><a href="#projects">Projects</a></li>
+            <li className="nav-li"><a className="hover__effect" href="#home">Home</a></li>
+            <li className="nav-li"><a className="hover__effect" href="#about">About</a></li>
+            <li className="nav-li"><a className="hover__effect" href="#projects">Projects</a></li>
             <li className="nav-li"><a href="#contact">Contact</a></li>
           </ul>
         </div>

@@ -1,7 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import "./Contact.css";
-import Footer from '../Footer/Footer'
 
 export default function Contact() {
   const form = useRef();
@@ -65,7 +64,10 @@ export default function Contact() {
         </div>
         <div className="sent-message">
           <div>
-            <h1>Sent! <br/>Thanks for the message</h1>
+            <h1>
+              Sent! <br />
+              Thanks for the message
+            </h1>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="1em"
@@ -76,68 +78,67 @@ export default function Contact() {
           </div>
         </div>
         <div className="contact-text-wrapper">
-            <div className="contact-text">
-              <div className="contact-text-title">
-                <h4>Contact</h4>
-              </div>
-              <div className="contact-text-main">
-                <h1>
-                  Let's connect and craft an extraordinary online masterpiece!
-                </h1>
-              </div>
-              <div className="contact-text-ending">
-                <h3>
-                  Got opportunities, ideas, or burning questions? Send them my
-                  way, and let's turn them into something remarkable!
-                </h3>
-              </div>
+          <div className="contact-text">
+            <div className="contact-text-title">
+              <h4>Contact</h4>
             </div>
-            <Footer/>
-        </div>
-          <div className="contact-input-wrapper">
-            <form
-              ref={form}
-              onSubmit={handleSubmit}
-              action=""
-              className="contact-form"
-            >
-              <div className="input-name-wrapper">
-                <label htmlFor="name">Name</label>
-                <input
-                  type="text"
-                  required
-                  name="user_name"
-                  value={name}
-                  onChange={handleNameChange}
-                />
-              </div>
-              <div className="input-email-wrapper">
-                <label htmlFor="">Email</label>
-                <input
-                  type="email"
-                  required
-                  name="user_email"
-                  value={email}
-                  onChange={handleEmailChange}
-                />
-              </div>
-              <div className="input-message-wrapper">
-                <label htmlFor="">Message</label>
-                <textarea
-                  name="message"
-                  required
-                  value={message}
-                  onChange={handleMessageChange}
-                  id=""
-                ></textarea>
-              </div>
-              <div className="form-button">
-                <button type="submit" id="unSent">
-                  {isSent ? "Sent! Thanks for the message" : "Send it my way"}
-                </button>
-              </div>
-            </form>
+            <div className="contact-text-main">
+              <h1>
+                Let's connect and craft an extraordinary online masterpiece!
+              </h1>
+            </div>
+            <div className="contact-text-ending">
+              <h3>
+                Got opportunities, ideas, or burning questions? Send them my
+                way, and let's turn them into something remarkable!
+              </h3>
+            </div>
           </div>
+        </div>
+        <div className="contact-input-wrapper">
+          <form
+            ref={form}
+            onSubmit={handleSubmit}
+            action=""
+            className="contact-form"
+          >
+            <div className="input-name-wrapper">
+              <label htmlFor="name">Name</label>
+              <input
+                type="text"
+                required
+                name="user_name"
+                value={name}
+                onChange={handleNameChange}
+              />
+            </div>
+            <div className="input-email-wrapper">
+              <label htmlFor="">Email</label>
+              <input
+                type="email"
+                required
+                name="user_email"
+                value={email}
+                onChange={handleEmailChange}
+              />
+            </div>
+            <div className="input-message-wrapper">
+              <label htmlFor="">Message</label>
+              <textarea
+                name="message"
+                required
+                value={message}
+                onChange={handleMessageChange}
+                id=""
+              ></textarea>
+            </div>
+            <div className="form-button">
+              <button type="submit" id="unSent">
+                {isSent ? "Sent! Thanks for the message" : "Send it my way"}
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
   );

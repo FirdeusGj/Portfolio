@@ -66,7 +66,7 @@ export default function About() {
             </div>
             <div className="technology-stack">
               <div className="technology">
-                <h1 style={{color:'white', marginBottom:"20px"}}><span style={{color: "#b9deff"}}>Technology</span> Stack</h1>
+                <h1 style={{color:'aliceblue', marginBottom:"20px"}}><span style={{color: "#b9deff"}}>Technology</span> Stack</h1>
                 <div className="technology-imgs">
                 {languagesData.map((elem) => (
                   <div className="technology__img--wrapper">

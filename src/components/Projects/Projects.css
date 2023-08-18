@@ -8,7 +8,7 @@
   overflow-x: hidden;
 }
 #projects>h1{
-  color:white;
+  color:aliceblue;
   text-align: center;
   font-size: 3rem;
   margin-bottom: 1rem;
@@ -67,7 +67,7 @@
   transition: all 300ms ease-in-out;
 }
 .project-link:hover{
-  box-shadow: 0 0 5px 0 white;
+  box-shadow: 0 0 5px 0 aliceblue;
   transform: scale(1.03);
 }
 @media (max-width:64rem) {

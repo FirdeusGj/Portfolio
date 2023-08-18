@@ -23,11 +23,10 @@
 }
 .about-text {
   width: 50%;
-  color: white;
+  color: aliceblue;
   display: flex;
   flex-direction: column;
   border-left: 4px solid;
-  border-image: linear-gradient(white, transparent) 1 1;
   padding-left: 10px;
 }
 .descriptionMobile{
@@ -38,7 +37,7 @@
   height: 70px;
   transition: all 200ms ease-in-out;
   object-fit: contain;
-  filter: drop-shadow(0 0 1px white);
+  filter: drop-shadow(0 0 1px aliceblue);
 }
 .technology{
   display: flex;
@@ -61,7 +60,7 @@
   justify-content: center;
 }
 .technology__img:hover{
-  transform: scale(1.1);
+  transform: scale(0.9);
 }
 .technology__img:hover + h5{
   opacity: 1;
@@ -72,7 +71,7 @@
 .technology__img--wrapper > h5{
   opacity: 0;
   transition: all 200ms ease-in-out;
-  color: white;
+  color: aliceblue;
   margin-top: 5px;
   transform: translateY(-100%) scale(0.1);
   visibility: hidden;

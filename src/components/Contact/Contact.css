@@ -4,8 +4,8 @@
     padding: 10px;
     position: relative;
     overflow: hidden;
-    border: 3px solid;
-    border-image: linear-gradient(18deg, white, transparent, white) 1 1;
+    border-left: 3px solid white;
+    padding-left: 20px;
     margin: 2px;
     animation: infinite ease-in-out 1000ms gradient, fadeIn forwards ease-in-out 500ms;
 }
@@ -27,8 +27,8 @@
 .sent-message{
     background-color: #242424;
     position: absolute;
-    color:white;
-    fill:white;
+    color:aliceblue;
+    fill:aliceblue;
     height: 130%;
     width: 130%;
     left:50%;
@@ -43,7 +43,7 @@
 .loading-screen{
     animation: forwards ease-out 500ms submitMessage;
     position: absolute;
-    fill:white;
+    fill:aliceblue;
     display: none;
     align-items: center;
     justify-content: center;
@@ -142,7 +142,7 @@
    width: 50%;
 }
 label{
-    color:white;
+    color:aliceblue;
 }
 .input-name-wrapper,
 .input-email-wrapper,
@@ -198,15 +198,9 @@ textarea{
     box-shadow: 0 0 5px 0 aliceblue;
     cursor: pointer;
 }
-@media (max-width:64rem) {
-    #contact{
-        border-image: linear-gradient(22deg, white, transparent, white) 1 1
-    }
-}
 @media (max-width:764px) {
     #contact{
         flex-direction: column;
-        border-image: linear-gradient(60deg, white, transparent, white) 1 1;
         gap: 4rem;
         margin:1rem;
     }
