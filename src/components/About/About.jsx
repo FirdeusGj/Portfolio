@@ -4,9 +4,9 @@ import { languagesData } from "../Data/LanguagesData";
 
 export default function About() {
   return (
-    <div className="about-wrapper" id="about">
+    <div className="about-wrapper flex-center" id="about">
       <div className="about-content">
-          <div className="about">
+          <div className="about flex-center">
             <div className="about-text">
               <div className="about-title">
                 <h1 style={{marginBottom:"20px"}}>About me</h1>
@@ -65,11 +65,11 @@ export default function About() {
               </div>
             </div>
             <div className="technology-stack">
-              <div className="technology">
+              <div className="technology flex-center">
                 <h1 style={{color:'aliceblue', marginBottom:"20px"}}><span style={{color: "#b9deff"}}>Technology</span> Stack</h1>
-                <div className="technology-imgs">
+                <div className="technology-imgs flex-center">
                 {languagesData.map((elem) => (
-                  <div className="technology__img--wrapper">
+                  <div className="technology__img--wrapper flex-center">
                     <img className="technology__img" src={elem.languageImage} alt="" />
                     <h5>{elem.languageName}</h5>
                   </div>

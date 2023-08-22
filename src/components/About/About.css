@@ -2,10 +2,7 @@
   width: 64rem;
   border-radius: 1rem 1rem 0 0;
   margin: 0 auto;
-  display: flex;
   gap: 1rem;
-  align-items: center;
-  justify-content: center;
   position: relative;
   padding: 2rem 0;
 }
@@ -14,10 +11,7 @@
 }
 .about-wrapper {
   overflow-x: hidden;
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   padding: 8rem 0;
   background:linear-gradient(black ,#101010);
 }
@@ -40,24 +34,15 @@
   filter: drop-shadow(0 0 1px aliceblue);
 }
 .technology{
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 .technology-imgs{
-  display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
 }
 .technology__img--wrapper{
-  display: flex;
   margin: 0 10px;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 .technology__img:hover{
   transform: scale(0.9);

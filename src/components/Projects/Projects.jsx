@@ -4,12 +4,12 @@ import { projectsData } from "../Data/ProjectsData";
 
 export default function Projects() {
   return (
-    <div id="projects">
+    <div id="projects" className="flex-center">
       <h1>My Projects</h1>
       {projectsData.map((elem) => (
         <>
-          <div key={elem.id} className="project">
-              <figure className="project-img">
+          <div key={elem.id} className="project flex-center">
+              <figure className="project-img flex-center">
                 <img src={elem.image} alt="img" />
               </figure>
             <div className="project-info">
@@ -26,8 +26,9 @@ export default function Projects() {
                       href={elem.githubLink}
                       target="_blank"
                       rel="noreferrer"
-                      className="project-link"
+                      className="project-link flex-center"
                     >
+                      
                       Github
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +42,7 @@ export default function Projects() {
                       href={elem.link}
                       target="_blank"
                       rel="noreferrer"
-                      className="project-link"
+                      className="project-link flex-center"
                     >
                       Link
                       <svg

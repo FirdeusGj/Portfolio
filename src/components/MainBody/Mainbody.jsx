@@ -45,7 +45,7 @@ export default function Mainbody() {
     (today.getTime() - startDate.getTime()) / (1000 * 3600 * 24)
   );
   return (
-    <main className="mainbody">
+    <main className="mainbody flex-center">
       <div className="background"></div>
       <div className="mainbody-wrapper">
         <div className="introduction">
@@ -61,7 +61,7 @@ export default function Mainbody() {
           <div className="introduction-links">
             <a
               title="Github"
-              className="introduction-link"
+              className="introduction-link flex-center"
               href="https://github.com/FirdeusGj"
               target="_blank"
               rel="noreferrer"
@@ -110,9 +110,9 @@ export default function Mainbody() {
           </div>
         </div>
         <a className="scroll" href="#about">
-          <div className="scroll-icon"></div>
+          <div className="scroll-icon flex-center"></div>
         </a>
-        <div className="stats-wrapper">
+        <div className="stats-wrapper flex-center">
           <h1>My Current Stats</h1>
           <div className="myStats">
             <div className="stats">

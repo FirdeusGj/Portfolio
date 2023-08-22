@@ -49,10 +49,10 @@ export default function Contact() {
       });
   };
   return (
-    <section className="contact-wrapper">
+    <section className="contact-wrapper flex-center">
       <div id="contact">
         <div className="loading-screen">
-          <div>
+          <div className="flex-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="1em"
@@ -63,7 +63,7 @@ export default function Contact() {
           </div>
         </div>
         <div className="sent-message">
-          <div>
+          <div className="flex-center">
             <h1>
               Sent! <br />
               Thanks for the message
