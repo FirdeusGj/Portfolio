@@ -76,7 +76,7 @@ export default function Mainbody() {
             </a>
             <a
             title="Resume"
-              className="introduction-link"
+              className="introduction-link flex-center"
               href="https://drive.google.com/file/d/16fOFFY5AZf6ir5IM_XMw2xGMUkruPFVM/view?usp=drive_link"
               target="_blank"
               rel="noreferrer"
