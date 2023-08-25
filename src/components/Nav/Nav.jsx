@@ -1,11 +1,9 @@
 import React from "react";
 import Logo from "../assets/theLogo.png";
 import "./Nav.css";
-import { Fade } from "react-reveal";
 
 export default function Nav() {
   return (
-    <Fade top cascade>
     <div className="nav-wrapper" id="home">
       <nav className="nav">
         <div className="logo-wrapper">
@@ -35,6 +33,5 @@ export default function Nav() {
         </div>
       </nav>
     </div>
-    </Fade>
   );
 }

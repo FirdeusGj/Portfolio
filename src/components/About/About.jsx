@@ -1,13 +1,11 @@
 import React from "react";
 import "./About.css";
 import { languagesData } from "../Data/LanguagesData";
-import { Fade } from "react-reveal";
 export default function About() {
   return (
     <div className="about-wrapper flex-center" id="about">
       <div className="about-content">
         <div className="about flex-center">
-          <Fade left>
             <div className="about-text">
               <div className="about-title">
                 <h1 style={{ marginBottom: "20px" }}>About me</h1>
@@ -65,8 +63,6 @@ export default function About() {
                 </div>
               </div>
             </div>
-          </Fade>
-          <Fade right cascade>
             <div className="technology-stack">
               <div className="technology flex-center">
                 <h1 style={{ color: "aliceblue", marginBottom: "20px" }}>
@@ -86,7 +82,6 @@ export default function About() {
                 </div>
               </div>
             </div>
-          </Fade>
         </div>
       </div>
     </div>

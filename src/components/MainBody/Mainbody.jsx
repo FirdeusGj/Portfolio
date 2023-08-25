@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Mainbody.css";
 import Graph from "../assets/graph.png";
-import { Fade } from "react-reveal";
 
 export default function Mainbody() {
   const Counter = ({ targetNumber, symbol, startValue }) => {
@@ -49,7 +48,6 @@ export default function Mainbody() {
     <main className="mainbody flex-center">
       <div className="background"></div>
       <div className="mainbody-wrapper">
-        <Fade left cascade>
           <div className="introduction">
             <h3>Hello, I am</h3>
             <h1>Firdeus Gjepali.</h1>
@@ -117,11 +115,9 @@ export default function Mainbody() {
               </a>
             </div>
           </div>
-        </Fade>
         <a className="scroll" href="#about">
           <div className="scroll-icon flex-center"></div>
         </a>
-        <Fade right cascade>
           <div className="stats-wrapper flex-center">
             <h1>My Current Stats</h1>
             <div className="myStats">
@@ -164,7 +160,6 @@ export default function Mainbody() {
               </div>
             </div>
           </div>
-        </Fade>
       </div>
     </main>
   );

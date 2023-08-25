@@ -5,6 +5,7 @@ import { projectsData } from "../Data/ProjectsData";
 export default function Projects() {
   return (
     <div id="projects" className="flex-center">
+
       <h1>My Projects</h1>
       {projectsData.map((elem) => (
         <>
@@ -42,7 +43,7 @@ export default function Projects() {
                     target="_blank"
                     rel="noreferrer"
                     className="project-link flex-center"
-                  >
+                    >
                     Link
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
