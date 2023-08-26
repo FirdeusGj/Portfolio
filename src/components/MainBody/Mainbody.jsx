@@ -89,7 +89,7 @@ export default function Mainbody() {
                   <path d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128z" />
                 </svg>
               </a>
-              <a title="Contact" className="introduction-link" href="#contact">
+              <a title="Contact" className="introduction-link flex-center" href="#contact">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   height="1em"
@@ -103,7 +103,7 @@ export default function Mainbody() {
                 target="_blank"
                 rel="noreferrer"
                 href="https://www.linkedin.com/in/firdeus-gjepali-832869245/"
-                className="introduction-link"
+                className="introduction-link flex-center"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
