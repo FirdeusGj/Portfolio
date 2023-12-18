@@ -2,7 +2,6 @@ import React from "react";
 import "./Footer.css";
 import FooterLogo from "../assets/theLogo.png";
 export default function Footer() {
-  
   return (
     <footer>
       <div className="footer-wrapper">
@@ -27,7 +26,7 @@ export default function Footer() {
           </a>
           <a
             className="introduction-link-footer hover__effect-footer"
-            href="https://drive.google.com/file/d/16fOFFY5AZf6ir5IM_XMw2xGMUkruPFVM/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1m4Hrq4cMaB1T7t_tOfYJ6GOh00lehVVH/view"
             target="_blank"
             rel="noreferrer"
           >

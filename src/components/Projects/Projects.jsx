@@ -1,17 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Projects.css";
 import { projectsData } from "../Data/ProjectsData";
-
+import blank from "../assets/blank.jpg";
 export default function Projects() {
+  const [loading, setLoading] = useState(true);
+  const handleLoading = () => {
+    setLoading(false);
+  };
   return (
     <div id="projects" className="flex-center">
-
       <h1>My Projects</h1>
       {projectsData.map((elem) => (
         <>
           <div key={elem.id} className="project flex-center">
             <figure className="project-img flex-center">
-              <img src={elem.image} alt="img" />
+              <img
+                onLoad={handleLoading}
+                src={loading ? blank : elem.image}
+                alt="img"
+              />
             </figure>
             <div className="project-info">
               <div className="project-text">
@@ -43,7 +50,7 @@ export default function Projects() {
                     target="_blank"
                     rel="noreferrer"
                     className="project-link flex-center"
-                    >
+                  >
                     Link
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

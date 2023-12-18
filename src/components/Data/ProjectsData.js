@@ -1,10 +1,9 @@
-import EcomProject from "../assets/ecommerceLink.png";
-import FitnessProject from "../assets/FitnessApp.png";
-import GoogleProject from "../assets/googleCloneLink.png";
-// import WeatherProject from '../assets/weatherApp.png' might continue later
-import NetflixProject from "../assets/netflix.png";
-import RentCarsProject from "../assets/RentCars.png";
-import FoodifyProject from "../assets/foodify.png";
+import EcomProject from "../assets/ecommerceLink.webp";
+import FitnessProject from "../assets/FitnessApp.webp";
+import GoogleProject from "../assets/googleCloneLink.webp";
+import NetflixProject from "../assets/netflix.webp";
+import RentCarsProject from "../assets/RentCars.webp";
+import FoodifyProject from "../assets/foodify.webp";
 
 export const projectsData = [
   {
