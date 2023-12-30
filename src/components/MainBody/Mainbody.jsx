@@ -4,12 +4,14 @@ import Graph from "../assets/graph.png";
 import Counter from "./Counter";
 import black from "../assets/black.jpg";
 import mainOne from "../assets/mainBackground.webp";
+import Resume from "../assets/MyResume.pdf";
+
 export default function Mainbody() {
   const [loading, setLoading] = useState(true);
   const handleLoading = () => {
     setLoading(false);
-    console.log("loaded");
   };
+
   const today = new Date();
   const startDate = new Date(2021, 7, 1);
   const daysDifference = Math.floor(
@@ -55,7 +57,7 @@ export default function Mainbody() {
             <a
               title="Resume"
               className="introduction-link flex-center"
-              href="https://drive.google.com/file/d/1m4Hrq4cMaB1T7t_tOfYJ6GOh00lehVVH/view"
+              href={Resume}
               target="_blank"
               rel="noreferrer"
             >

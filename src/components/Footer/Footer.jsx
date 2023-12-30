@@ -1,6 +1,8 @@
 import React from "react";
 import "./Footer.css";
 import FooterLogo from "../assets/theLogo.png";
+import Resume from "../assets/MyResume.pdf";
+
 export default function Footer() {
   return (
     <footer>
@@ -26,7 +28,7 @@ export default function Footer() {
           </a>
           <a
             className="introduction-link-footer hover__effect-footer"
-            href="https://drive.google.com/file/d/1m4Hrq4cMaB1T7t_tOfYJ6GOh00lehVVH/view"
+            href={Resume}
             target="_blank"
             rel="noreferrer"
           >
