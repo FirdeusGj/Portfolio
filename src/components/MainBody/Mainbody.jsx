@@ -4,7 +4,7 @@ import Graph from "../assets/graph.png";
 import Counter from "./Counter";
 import black from "../assets/black.jpg";
 import mainOne from "../assets/mainBackground.webp";
-import Resume from "../assets/MyCV.pdf";
+import Resume from "../assets/CurrentResume.pdf";
 
 export default function Mainbody() {
   const [loading, setLoading] = useState(true);

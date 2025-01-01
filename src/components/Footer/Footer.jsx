@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import FooterLogo from "../assets/theLogo.png";
-import Resume from "../assets/MyCV.pdf";
+import Resume from "../assets/CurrentResume.pdf";
 
 export default function Footer() {
   return (
